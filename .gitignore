@@ -5,7 +5,9 @@
 *.slo
 *.lo
 *.o
-*.obj
+*.OBJ
+*.BAK
+*.MAP
 
 # Precompiled Headers
 *.gch
