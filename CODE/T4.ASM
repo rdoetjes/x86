@@ -158,7 +158,7 @@ drawBar PROC
 	mov al,00h
 	ret
   bar:
-	add bx, 35		;draw a bar 30 lines wide
+	add bx, 36		;draw a bar 30 lines wide
 	cmp cx, bx
 	jg colOff               ;is scanline beyond the bar, then draw black
 	jz barLastLine          ;last line has a brighter tint but not ffh
@@ -167,7 +167,7 @@ drawBar PROC
 	sub bx,20
 	cmp cx, bx
 	push cx
-	jae subC
+	jg subC
 	sub cx, bx              ;shade darker based of width
 	add al, cl              ;1byte move result to cl
 	jmp short dcd
