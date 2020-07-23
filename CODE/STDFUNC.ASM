@@ -33,8 +33,9 @@ Random ENDP
 ;	@Return: NONE
 ;
 TextMode PROC
-	mov al, 12h	;video mode 25x80 16 colours
+	mov ax, 03h	;video mode 25x80 16 colours
 	int 10h         ;set it
+	ret
 TextMode ENDP
 
 ;
@@ -50,7 +51,8 @@ KeyPressExit PROC
 	jnz EXIT
 	ret
 EXIT:
-	sti		;enable interrupts incase they were disabled by main program
+	call TextMode
 	mov ax, 4c00h
 	int 21h
+	ret
 KeyPressExit ENDP
