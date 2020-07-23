@@ -2,6 +2,12 @@
 
 .STACK 1000h
 
+PALETTE_INDEX EQU 3c8h
+PALETTE_DATA EQU 3c9h
+INPUT_STATUS EQU 3dah
+HRETRACE EQU 01h
+VRETRACE EQU 08h	
+
 .DATA
 	bpos	db 00
 	sine	db 128,131,134,137,140,143,146,149
@@ -37,6 +43,7 @@
 		db 81,84,87,90,93,96,99,103
 		db 106,109,112,115,118,121,124,128
 	endSine	db 00
+	copper1 dw 00
 
 .CODE
 	include STDFUNC.ASM
@@ -48,12 +55,75 @@ MAIN PROC
 
 	call SeedRnd
 
-	cli	;diable interupts we are doing time critical stuff
 _loop:
+	;sine table offset pointer
 	mov di, 00h
 __loop:
 	;read the sine from the sine list
-	mov al, [sine+di]
+	mov cx, word ptr [sine+di]
+	mov [copper1], cx
+
+	;wait for a vertical retrace
+	cli
+	mov dx, INPUT_STATUS
+
+_v1:	in al, dx
+	and al, VRETRACE
+	jnz _v1
+
+_v2:
+	in al, dx
+	and al, VRETRACE
+	jz _v2
+	sti
+
+	mov cx, 0h
+_lines:
+	mov bx, [copper1]
+	and bx, 00ffh	;only keep low byte
+	cmp cx, bx
+	jnz col_off
+	mov al, 0ffh
+	jmp short set_col
+
+col_off:
+	mov al, 00h
+
+set_col:
+	push ax		;we need to safe ax because it contains our color
+
+	;now set the color of the scan line to black
+	mov dx, PALETTE_INDEX
+	mov al, 00h
+	out dx, al
+
+	;this is the current scanline so set the color not to black
+	pop ax
+	mov dx, PALETTE_DATA
+	out dx, al
+	mov dx, PALETTE_DATA
+	out dx, al
+	mov dx, PALETTE_DATA
+	out dx, al
+
+	;wait for horizontal retrace
+	cli
+	mov dx, INPUT_STATUS
+
+_l1:	in al, dx
+	and al, HRETRACE
+	jnz _l1
+
+_l2:
+	in al, dx
+	and al, HRETRACE
+	jz _l2
+
+	inc cx
+	cmp cx, 350
+	jnz _lines
+	sti
+
 
 	;if key pressed then exit
 	call KeyPressExit
