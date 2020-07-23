@@ -57,8 +57,10 @@ MAIN PROC
 	;initialize the program
 	mov ax,SEG _DATA
 	mov ds, ax
-	mov ax, 19
+
+	mov ax, 13h
 	int 10h
+
 	call SeedRnd
 
 _loop:
