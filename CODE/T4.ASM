@@ -45,6 +45,7 @@ VRETRACE EQU 08h
 	endSine	db 00
 	cop1Pos dw 00
 	cop2Pos	dw 00
+	cop3Pos	dw 00
 	r	db 00
 	g	db 00
 	b	db 00
@@ -64,10 +65,19 @@ _loop:
 __loop:
 	;read the sine from the sine list
 	mov cx, word ptr [sine+di]
+	mov [cop2Pos], cx
+
+	mov si, di
+	add si, 20
+	and si, 00ffh
+	mov cx, word ptr [sine+si]
 	mov [cop1Pos], cx
 
-	mov cx, word ptr [sine+di+3]
-	mov [cop2Pos], cx
+	add si, 20
+	and si, 00ffh
+	mov cx, word ptr [sine+si]
+	mov [cop3Pos], cx
+
 
 	;wait for a vertical retrace
 	cli
@@ -92,11 +102,11 @@ _lines:
 	call drawBar
 	mov [r], al
 
-	mov bx,0
+	mov bx,[cop2Pos]
 	call drawBar
 	mov [b], al
 
-	mov bx, 255
+	mov bx, [cop3Pos]
 	call drawBar
 	mov [g], al
 
@@ -125,8 +135,10 @@ _h2:	in al, dx
 	;Increment DI to point to the next entry in the sine list
 	inc di
 	cmp di, (endSine-sine)
-	jnz __loop
+	jnz _h3
 	jmp _loop
+_h3:
+	jmp __loop
 MAIN ENDP
 
 ;
