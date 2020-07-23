@@ -1,12 +1,12 @@
 .MODEL tiny
 
-.STACK 1000h
+.STACK 100h
 
 PALETTE_INDEX EQU 3c8h
 PALETTE_DATA EQU 3c9h
 INPUT_STATUS EQU 3dah
 HRETRACE EQU 01h
-VRETRACE EQU 08h	
+VRETRACE EQU 08h
 
 .DATA
 	bpos	db 00
@@ -43,7 +43,8 @@ VRETRACE EQU 08h
 		db 81,84,87,90,93,96,99,103
 		db 106,109,112,115,118,121,124,128
 	endSine	db 00
-	copper1 dw 00
+	cop1Pos dw 00
+	cop2Pos	db 00
 
 .CODE
 	include STDFUNC.ASM
@@ -61,7 +62,7 @@ _loop:
 __loop:
 	;read the sine from the sine list
 	mov cx, word ptr [sine+di]
-	mov [copper1], cx
+	mov [cop1Pos], cx
 
 	;wait for a vertical retrace
 	cli
@@ -79,13 +80,25 @@ _v2:
 
 	mov cx, 0h
 _lines:
-	mov bx, [copper1]
-	and bx, 00ffh	;only keep low byte
+	mov bx, [cop1Pos]
+	and bx, 00ffh		;only keep low byte
+	cmp cx, bx		;are we on the bar lines?
+	jae bar         	;yes? draw the bar lines
+	jmp short col_off	;no? draw black bg
+bar:
+	add bx, 30		;draw a bar 20 lines wide
 	cmp cx, bx
-	jnz col_off
-	mov al, 0ffh
+	jg col_off              ;is scanline beyond the bar, then draw black
+	jz bar_low              ;last line has a brighter tint but not ffh
+	mov al, 0ffh    	;yes? then set the color of the bar
+	push cx                 ; do shading
+	sub cx, bx
+	sub al, cl
+	pop cx
 	jmp short set_col
-
+bar_low:
+	mov al,0d0h
+	jmp short set_col
 col_off:
 	mov al, 00h
 
@@ -101,6 +114,7 @@ set_col:
 	pop ax
 	mov dx, PALETTE_DATA
 	out dx, al
+	mov al, 00h
 	mov dx, PALETTE_DATA
 	out dx, al
 	mov dx, PALETTE_DATA
