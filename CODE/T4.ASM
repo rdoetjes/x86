@@ -162,14 +162,18 @@ drawBar PROC
 	cmp cx, bx
 	jg colOff               ;is scanline beyond the bar, then draw black
 	jz barLastLine          ;last line has a brighter tint but not ffh
-	mov al, 0ffh    	;else do the shading
-	push cx                 ;safe our line counter so we can restore it
+
+	mov al, 0ebh
+	sub bx,20
+	cmp cx, bx
+	push cx
+	jae subC
 	sub cx, bx              ;shade darker based of width
-	jae btod
-	sub al, cl              ;1byte move result to cl
+	add al, cl              ;1byte move result to cl
 	jmp short dcd
-  btod:
-	add al, cl
+  subC:
+	sub cx, bx
+	sub al, cl
   dcd:
 	pop cx                  ;restore line counter
 	ret
