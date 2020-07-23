@@ -158,7 +158,7 @@ drawBar PROC
 	mov al,00h
 	ret
   bar:
-	add bx, 40		;draw a bar 30 lines wide
+	add bx, 35		;draw a bar 30 lines wide
 	cmp cx, bx
 	jg colOff               ;is scanline beyond the bar, then draw black
 	jz barLastLine          ;last line has a brighter tint but not ffh
