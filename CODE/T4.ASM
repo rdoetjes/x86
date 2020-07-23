@@ -44,7 +44,7 @@ VRETRACE EQU 08h
 		db 106,109,112,115,118,121,124,128
 	endSine	db 00
 	cop1Pos dw 00
-	cop2Pos	db 00
+	cop2Pos	dw 00
 
 .CODE
 	include STDFUNC.ASM
@@ -64,6 +64,9 @@ __loop:
 	mov cx, word ptr [sine+di]
 	mov [cop1Pos], cx
 
+	mov cx, word ptr [sine+di+3]
+	mov [cop2Pos], cx
+
 	;wait for a vertical retrace
 	cli
 	mov dx, INPUT_STATUS
@@ -72,37 +75,78 @@ _v1:	in al, dx
 	and al, VRETRACE
 	jnz _v1
 
-_v2:
-	in al, dx
+_v2:	in al, dx
 	and al, VRETRACE
 	jz _v2
 	sti
 
 	mov cx, 0h
 _lines:
+	mov bx,200
+	call drawBar
 	mov bx, [cop1Pos]
-	and bx, 00ffh		;only keep low byte
-	cmp cx, bx		;are we on the bar lines?
-	jae bar         	;yes? draw the bar lines
-	jmp short col_off	;no? draw black bg
-bar:
-	add bx, 30		;draw a bar 20 lines wide
-	cmp cx, bx
-	jg col_off              ;is scanline beyond the bar, then draw black
-	jz bar_low              ;last line has a brighter tint but not ffh
-	mov al, 0ffh    	;yes? then set the color of the bar
-	push cx                 ; do shading
-	sub cx, bx
-	sub al, cl
-	pop cx
-	jmp short set_col
-bar_low:
-	mov al,0d0h
-	jmp short set_col
-col_off:
-	mov al, 00h
+	call drawBar
+	mov bx, 10
+	call drawBar
+	call setBarColor
 
-set_col:
+	;wait for horizontal retrace
+	cli
+	mov dx, INPUT_STATUS
+
+_h1:	in al, dx
+	and al, HRETRACE
+	jnz _h1
+
+_h2:	in al, dx
+	and al, HRETRACE
+	jz _h2
+
+	inc cx	;increment line count
+	cmp cx, 350
+	jnz _lines
+	sti
+
+	;if key pressed then exit
+	call KeyPressExit
+
+	;Increment DI to point to the next entry in the sine list
+	inc di
+	cmp di, (endSine-sine)
+	jnz __loop
+	jmp _loop
+MAIN ENDP
+
+;
+; @Desc:	Draw a shaded copper bar
+; @Input:	BX start rasterline of the copper bar
+;    		CX current rasterline
+; @Globbers: 	AX
+; @Returns:	Shade of the bar
+drawBar PROC
+	and bx, 00ffh		;only keep low byte
+	cmp cx, bx		;is rasterline somewhere between our bar?
+	jae bar         	;yes? draw the bar line
+	ret
+  bar:
+	add bx, 30		;draw a bar 30 lines wide
+	cmp cx, bx
+	jg colOff               ;is scanline beyond the bar, then draw black
+	jz barLastLine          ;last line has a brighter tint but not ffh
+	mov al, 0ffh    	;else do the shading
+	push cx                 ;safe our line counter so we can restore it
+	sub cx, bx              ;shade darker based of width
+	sub al, cl              ;1byte move result to cl
+	pop cx                  ;restore line counter
+	ret
+  barLastLine:
+	mov al,0d0h
+	ret
+  colOff:
+	ret
+drawBar ENDP
+
+setBarColor PROC
 	push ax		;we need to safe ax because it contains our color
 
 	;now set the color of the scan line to black
@@ -117,36 +161,9 @@ set_col:
 	mov al, 00h
 	mov dx, PALETTE_DATA
 	out dx, al
+	mov al, 00h
 	mov dx, PALETTE_DATA
 	out dx, al
-
-	;wait for horizontal retrace
-	cli
-	mov dx, INPUT_STATUS
-
-_l1:	in al, dx
-	and al, HRETRACE
-	jnz _l1
-
-_l2:
-	in al, dx
-	and al, HRETRACE
-	jz _l2
-
-	inc cx
-	cmp cx, 350
-	jnz _lines
-	sti
-
-
-	;if key pressed then exit
-	call KeyPressExit
-
-	;Increment DI to point to the next entry in the sine list
-	inc di
-	cmp di, (endSine-sine)
-	jnz __loop
-
-	jmp short _loop
-MAIN ENDP
+	ret
+SetBarColor ENDP
 END MAIN
