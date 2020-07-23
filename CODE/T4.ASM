@@ -45,6 +45,9 @@ VRETRACE EQU 08h
 	endSine	db 00
 	cop1Pos dw 00
 	cop2Pos	dw 00
+	r	db 00
+	g	db 00
+	b	db 00
 
 .CODE
 	include STDFUNC.ASM
@@ -53,7 +56,6 @@ MAIN PROC
 	;initialize the program
 	mov ax,SEG _DATA
 	mov ds, ax
-
 	call SeedRnd
 
 _loop:
@@ -82,12 +84,22 @@ _v2:	in al, dx
 
 	mov cx, 0h
 _lines:
-	mov bx,200
-	call drawBar
+	mov [r], 0
+	mov [g], 0
+	mov [b], 0
+
 	mov bx, [cop1Pos]
 	call drawBar
-	mov bx, 10
+	mov [r], al
+
+	mov bx,0
 	call drawBar
+	mov [b], al
+
+	mov bx, 255
+	call drawBar
+	mov [g], al
+
 	call setBarColor
 
 	;wait for horizontal retrace
@@ -127,6 +139,7 @@ drawBar PROC
 	and bx, 00ffh		;only keep low byte
 	cmp cx, bx		;is rasterline somewhere between our bar?
 	jae bar         	;yes? draw the bar line
+	mov al,00h
 	ret
   bar:
 	add bx, 30		;draw a bar 30 lines wide
@@ -143,27 +156,29 @@ drawBar PROC
 	mov al,0d0h
 	ret
   colOff:
+	mov al,00h
 	ret
 drawBar ENDP
 
 setBarColor PROC
-	push ax		;we need to safe ax because it contains our color
-
 	;now set the color of the scan line to black
 	mov dx, PALETTE_INDEX
 	mov al, 00h
 	out dx, al
 
 	;this is the current scanline so set the color not to black
-	pop ax
+	mov al, byte ptr [r]
 	mov dx, PALETTE_DATA
 	out dx, al
-	mov al, 00h
+
+	mov al, byte ptr [g]
 	mov dx, PALETTE_DATA
 	out dx, al
-	mov al, 00h
+
+	mov al, byte ptr [b]
 	mov dx, PALETTE_DATA
 	out dx, al
 	ret
+
 SetBarColor ENDP
 END MAIN
