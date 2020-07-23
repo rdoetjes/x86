@@ -163,7 +163,7 @@ drawBar PROC
 	jg colOff               ;is scanline beyond the bar, then draw black
 	jz barLastLine          ;last line has a brighter tint but not ffh
 
-	mov al, 0ebh
+	mov al, 0e0h
 	sub bx,20
 	cmp cx, bx
 	push cx
