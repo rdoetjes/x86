@@ -22,9 +22,9 @@ main proc
 	mov ax, 0a000h	;point to screen memory
 	mov es, ax
 
-	mov ax, 0
-	mov bx, 0
-	mov cx, 0
+	mov ax, 0   ;x
+	mov bx, 0   ;y
+	mov cx, 0   ;color
 draw:
 	drawPixel ax cx bx
 	inc ax
