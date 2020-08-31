@@ -26,6 +26,7 @@ my_handler proc
 	push si
 	push di
 
+	cli
 	call openFile
 	in al, 60h
 	mov [scancode], al
@@ -41,7 +42,9 @@ my_handler proc
 	pop cx
 	pop bx
 	pop ax
+
 	jmp cs:OLD_INT
+	sti
 my_handler endp
 
 closeFile proc

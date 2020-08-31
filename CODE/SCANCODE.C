@@ -55,6 +55,7 @@ void tr(unsigned char scancode)
     {
 	/* You can use this one to see if the user released the
 	*  shift, alt, or control keys... */
+	//printf("^^");
     }
     else
     {
