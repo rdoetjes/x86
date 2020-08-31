@@ -1,3 +1,11 @@
+drawPixel MACRO x, y, c
+	push x
+	push y
+	push c
+	call dPixel
+	add sp, 6
+ENDM
+
 .model small
 
 .code
@@ -10,17 +18,9 @@ main proc
 	mov ax, 0a000h	;point to screen memory
 	mov es, ax
 
-	push 1
-	push 150
-	push 3
-	call drawPixel
-	add sp, 6
+	drawPixel 1 150 3
 
-	push 3
-	push 150
-	push 4
-	call drawPixel
-	add sp, 6
+	drawPixel 2 150 4
 
 	mov ah, 04ch
 	int 021h
@@ -32,7 +32,7 @@ main endp
 ;formule is (320 * y) + x
 ;mul instruction would take up to 133 cycles
 ;shl instructions plus adds take 34 cycles in total
-drawPixel proc
+dPixel proc
 	push bp  	;we pass parameters via the stack
 	mov bp, sp      ;so we safe the bp
 
@@ -57,7 +57,7 @@ drawPixel proc
 
 	pop bp
 	ret
-drawPixel endp
+dPixel endp
 
 
 end main
