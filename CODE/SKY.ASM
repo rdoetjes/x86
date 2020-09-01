@@ -1,8 +1,10 @@
 .model small
 
+TSTARS	EQU    60
+
 .data
 	prn	dw 	00h
-	stars	db	120 DUP (?)
+	stars	db	3*TSTARS DUP (?)
 
 .code
 org 100h
@@ -17,6 +19,7 @@ main proc
 	mov ax, seg stars
 	mov ds, ax
 
+	call SeedRnd
 	call loadStars
   loop_:
 	call drawStars
@@ -46,7 +49,7 @@ keyP PROC
 keyP ENDP
 
 moveStars PROC
-	mov di, 40
+	mov di, TSTARS
 	mov si, OFFSET stars
   move_:
 	mov bx, word ptr [si]
@@ -87,7 +90,7 @@ moveStars PROC
 moveStars ENDP
 
 drawStars PROC
-	mov di, 40
+	mov di, TSTARS
 	mov si, OFFSET stars
   drawStars_:
 	mov bx, word ptr [si]
@@ -124,6 +127,11 @@ SeedRnd ENDP
 
 Random PROC
 	call SeedRnd
+	mov cx, 1000h
+  __rnd:
+	dec cx
+	jnz __rnd
+
 	mov ax, 25173	;LCG mult
 	mul word ptr [PRN]
 	add ax, 13849
