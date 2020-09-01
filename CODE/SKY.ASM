@@ -1,6 +1,6 @@
 .model small
 
-TSTARS	EQU    100
+TSTARS	EQU    200
 
 .data
 	prn	dw 	00h
@@ -127,7 +127,7 @@ SeedRnd ENDP
 
 Random PROC
 	call SeedRnd
-	mov cx, 1000h
+	mov cx, 0ffh
   __rnd:
 	dec cx
 	jnz __rnd
