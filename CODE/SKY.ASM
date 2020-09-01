@@ -1,6 +1,6 @@
 .model small
 
-TSTARS	EQU    60
+TSTARS	EQU    100
 
 .data
 	prn	dw 	00h
@@ -103,7 +103,7 @@ drawStars PROC
 drawStars ENDP
 
 loadStars PROC
-	mov di, 40
+	mov di, TSTARS
 	mov bx, OFFSET stars
   loadStars_:
 	call Random
