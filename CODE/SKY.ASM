@@ -23,7 +23,7 @@ main proc
 	call loadStars
   loop_:
 	call drawStars
-	mov cx, 0f000h
+	mov cx, 0e000h
   wait_:
 	dec cx
 	jnz wait_
