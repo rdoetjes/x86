@@ -127,7 +127,7 @@ SeedRnd ENDP
 
 Random PROC
 	call SeedRnd
-	mov cx, 0fffh
+	mov cx, 09ffh
   __rnd:
 	dec cx
 	jnz __rnd
