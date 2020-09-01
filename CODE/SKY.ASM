@@ -8,8 +8,6 @@
 org 100h
 
 main proc
-	call SeedRnd
-
 	mov ax, 13h	;MCGA mode
 	int 010h
 
@@ -125,6 +123,7 @@ SeedRnd PROC
 SeedRnd ENDP
 
 Random PROC
+	call SeedRnd
 	mov ax, 25173	;LCG mult
 	mul word ptr [PRN]
 	add ax, 13849
