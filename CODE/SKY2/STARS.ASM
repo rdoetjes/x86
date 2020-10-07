@@ -2,1439 +2,2375 @@ spiral	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da1h
 	dw 07da1h
 	dw 07da2h
+	dw 07da4h
 	dw 07da5h
-	dw 07da8h
+	dw 07da7h
+	dw 07da9h
 	dw 07dach
-	dw 07db1h
+	dw 07dafh
+	dw 07db3h
 	dw 07db7h
-	dw 07dbfh
-	dw 07dc8h
-	dw 07dd3h
-	dw 07de0h
+	dw 07dbch
+	dw 07dc1h
+	dw 07dc7h
+	dw 07dcdh
+	dw 07dd5h
+	dw 07dddh
+	dw 07de5h
 	dw 07defh
-	dw 07e00h
-	dw 07e13h
-	dw 07e29h
+	dw 07df9h
+	dw 07e04h
+	dw 07e10h
+	dw 07e1dh
+	dw 07e2bh
+	dw 07e3ah
+	dw 07e3fh
 	dw 07e3fh
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c60h
 	dw 07c60h
 	dw 07b20h
 	dw 078a1h
+	dw 07761h
 	dw 074e2h
-	dw 06fe3h
-	dw 069a4h
+	dw 07262h
+	dw 06ea3h
+	dw 06ae4h
+	dw 06725h
 	dw 06226h
-	dw 05968h
-	dw 04e2bh
-	dw 0406eh
-	dw 03172h
+	dw 05be7h
+	dw 055a9h
+	dw 04f6bh
+	dw 046adh
+	dw 03f2fh
+	dw 03531h
+	dw 02b33h
 	dw 01eb6h
-	dw 0abbh
+	dw 01379h
+	dw 05bch
 	dw 0c0h
-	dw 0c6h
-	dw 0cdh
+	dw 0c3h
+	dw 0c7h
+	dw 0cbh
+	dw 0d0h
+	dw 0d5h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07c5fh
 	dw 07c5eh
-	dw 07b1ch
+	dw 07b1dh
+	dw 079dch
 	dw 0789ah
+	dw 07758h
 	dw 07616h
-	dw 07252h
+	dw 07393h
+	dw 07110h
 	dw 06e8dh
-	dw 06846h
-	dw 061feh
-	dw 05a75h
-	dw 051aah
+	dw 06ac9h
+	dw 06704h
+	dw 0633fh
+	dw 05f7ah
+	dw 05a74h
+	dw 0542dh
+	dw 04f26h
 	dw 0479eh
-	dw 03c50h
-	dw 02fc0h
-	dw 020aeh
-	dw 01059h
+	dw 04155h
+	dw 039cch
+	dw 03102h
+	dw 02837h
+	dw 01e2bh
+	dw 0141fh
+	dw 0a11h
+	dw 03h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07d9fh
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07edfh
 	dw 07edeh
-	dw 0815dh
-	dw 083dah
-	dw 08657h
-	dw 08b53h
+	dw 0801dh
+	dw 0815ch
+	dw 0829bh
+	dw 08519h
+	dw 08797h
+	dw 08a15h
+	dw 08c92h
 	dw 0904fh
-	dw 09689h
-	dw 09e02h
-	dw 0a6b9h
-	dw 0b0b0h
+	dw 0940bh
+	dw 097c7h
+	dw 09cc3h
+	dw 0a1beh
+	dw 0a7f8h
+	dw 0ae32h
+	dw 0b5abh
 	dw 0bd24h
-	dw 0cad7h
-	dw 0db09h
-	dw 0ec78h
-	dw 0f8e6h
+	dw 0c5dch
+	dw 0ce94h
+	dw 0d88bh
+	dw 0e281h
+	dw 0edb6h
+	dw 0f8ebh
+	dw 0f8dfh
+	dw 0f8d2h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08021h
-	dw 082a2h
-	dw 08663h
-	dw 08a24h
-	dw 09066h
+	dw 08161h
+	dw 083e2h
+	dw 08523h
+	dw 088e4h
+	dw 08b65h
+	dw 08f26h
+	dw 092e7h
 	dw 097e9h
-	dw 0a0ach
-	dw 0abf0h
-	dw 0b875h
-	dw 0c63ah
+	dw 09cebh
+	dw 0a32dh
+	dw 0a970h
+	dw 0b0f2h
+	dw 0b9b5h
+	dw 0c278h
+	dw 0cc7ch
 	dw 0d7c0h
-	dw 0ea87h
-	dw 0f98fh
-	dw 0f997h
-	dw 0f9a1h
+	dw 0e304h
+	dw 0f0c9h
+	dw 0f98eh
+	dw 0f993h
+	dw 0f999h
+	dw 0f99fh
+	dw 0f9a5h
+	dw 0f9ach
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07da2h
+	dw 07da4h
 	dw 07da5h
 	dw 07c67h
-	dw 07c6bh
-	dw 07b30h
+	dw 07c69h
+	dw 07c6ch
+	dw 07b2fh
+	dw 07b33h
 	dw 079f7h
-	dw 078bfh
-	dw 07788h
-	dw 07653h
-	dw 073dfh
+	dw 079fbh
+	dw 078c1h
+	dw 07787h
+	dw 0764dh
+	dw 07514h
+	dw 073dch
+	dw 072a5h
 	dw 0716eh
-	dw 06effh
-	dw 06b52h
-	dw 067a7h
-	dw 063ffh
+	dw 07038h
+	dw 06dc3h
+	dw 06c8fh
+	dw 06a1ch
+	dw 067aah
+	dw 06539h
+	dw 062bfh
+	dw 0603fh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
+	dw 078a0h
 	dw 07760h
 	dw 074e1h
-	dw 06fe1h
-	dw 069a2h
+	dw 07261h
+	dw 06ea1h
+	dw 06ae2h
+	dw 065e2h
 	dw 060e3h
-	dw 05824h
-	dw 04ba6h
-	dw 03de7h
-	dw 02ee9h
+	dw 05be4h
+	dw 05465h
+	dw 04e26h
+	dw 04567h
+	dw 03ca8h
+	dw 032a9h
+	dw 028aah
 	dw 01c2ch
-	dw 06eeh
+	dw 0fadh
+	dw 01efh
 	dw 0b1h
+	dw 0b3h
 	dw 0b5h
-	dw 0b8h
+	dw 0b7h
+	dw 0bah
+	dw 0bch
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07c5eh
-	dw 07b1ch
-	dw 079d9h
-	dw 07756h
-	dw 074d1h
+	dw 07c5dh
+	dw 07b1bh
+	dw 079dah
+	dw 07898h
+	dw 07755h
+	dw 07612h
+	dw 0738fh
 	dw 0710bh
-	dw 06d44h
-	dw 0683ch
-	dw 061f2h
-	dw 05ba6h
+	dw 06e87h
+	dw 06c02h
+	dw 0697dh
+	dw 065b7h
+	dw 061f0h
+	dw 05ce9h
+	dw 05921h
 	dw 05419h
-	dw 04a0ah
-	dw 03ff8h
-	dw 034a5h
-	dw 026cfh
+	dw 04dcfh
+	dw 04785h
+	dw 0413ah
+	dw 03aefh
+	dw 03362h
+	dw 02a95h
+	dw 021c6h
+	dw 01900h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07edfh
 	dw 0801fh
-	dw 0815dh
-	dw 0851bh
-	dw 08798h
-	dw 08c95h
+	dw 0815eh
+	dw 0829dh
+	dw 083dbh
+	dw 0865ah
+	dw 088d8h
+	dw 08b56h
+	dw 08f14h
 	dw 092d1h
-	dw 09a4ch
-	dw 0a305h
-	dw 0acfeh
-	dw 0b975h
+	dw 097ceh
+	dw 09b8ah
+	dw 0a1c6h
+	dw 0a802h
+	dw 0ae3dh
+	dw 0b5b8h
+	dw 0be72h
 	dw 0c72ch
-	dw 0d620h
-	dw 0e8d3h
-	dw 0f905h
-	dw 0f8f5h
+	dw 0cfe5h
+	dw 0db1dh
+	dw 0e655h
+	dw 0f18dh
+	dw 0f903h
+	dw 0f8f9h
+	dw 0f8efh
+	dw 0f8e3h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee1h
 	dw 08021h
-	dw 082a2h
+	dw 08162h
+	dw 082a3h
 	dw 08524h
+	dw 087a5h
 	dw 08a26h
-	dw 08f28h
+	dw 08de8h
+	dw 091aah
 	dw 0956ch
-	dw 09e30h
-	dw 0a835h
-	dw 0b37bh
-	dw 0c141h
+	dw 09a6eh
+	dw 0a0b1h
+	dw 0a6f4h
+	dw 0ae78h
+	dw 0b5fbh
+	dw 0bd80h
+	dw 0c784h
 	dw 0d189h
-	dw 0e312h
-	dw 0f85ch
-	dw 0f9a7h
-	dw 0f9b4h
+	dw 0dccfh
+	dw 0e814h
+	dw 0f5dbh
+	dw 0f9a2h
+	dw 0f9a9h
+	dw 0f9b1h
+	dw 0f9b9h
+	dw 0f9c2h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da1h
 	dw 07da1h
 	dw 07da2h
 	dw 07c64h
+	dw 07c65h
 	dw 07b27h
-	dw 079ebh
-	dw 078b0h
+	dw 07b29h
+	dw 079ech
+	dw 078afh
+	dw 07772h
 	dw 07636h
-	dw 073beh
-	dw 07147h
-	dw 06d91h
-	dw 069deh
+	dw 074fbh
+	dw 073c0h
+	dw 07145h
+	dw 06ecch
+	dw 06d93h
+	dw 069dah
+	dw 06763h
 	dw 064ech
-	dw 05ebch
-	dw 0588fh
-	dw 05264h
-	dw 049bbh
+	dw 06136h
+	dw 05d81h
+	dw 059cch
+	dw 054d9h
+	dw 05127h
+	dw 04c35h
+	dw 0473fh
+	dw 040ffh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
+	dw 078a0h
 	dw 07760h
-	dw 073a0h
+	dw 074e0h
+	dw 07260h
 	dw 06ea0h
-	dw 06860h
+	dw 06ae0h
+	dw 065e0h
 	dw 060e0h
-	dw 056e0h
-	dw 04ba0h
-	dw 03de1h
-	dw 02da1h
+	dw 05aa0h
+	dw 05460h
+	dw 04ce0h
+	dw 04561h
+	dw 03b61h
+	dw 03161h
+	dw 02761h
 	dw 01ae1h
-	dw 05a2h
+	dw 0e61h
+	dw 0a2h
+	dw 0a2h
 	dw 0a2h
 	dw 0a3h
 	dw 0a3h
+	dw 0a3h
+	dw 0a4h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
-	dw 07c5ch
+	dw 07c5dh
+	dw 07c5bh
 	dw 07b19h
-	dw 079d5h
-	dw 07750h
+	dw 079d7h
+	dw 079d4h
+	dw 07892h
+	dw 0774eh
 	dw 074cah
-	dw 07243h
-	dw 06e7ah
-	dw 06aafh
-	dw 065a3h
+	dw 07386h
+	dw 07101h
+	dw 06fbbh
+	dw 06d35h
+	dw 0696eh
+	dw 066e6h
+	dw 0631eh
 	dw 05f55h
-	dw 05905h
-	dw 05173h
-	dw 049deh
-	dw 03fc7h
+	dw 05b8bh
+	dw 057c0h
+	dw 052b5h
+	dw 04da9h
+	dw 0489bh
+	dw 0424dh
+	dw 03c00h
+	dw 035c0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07edfh
 	dw 0801fh
-	dw 0829eh
+	dw 0815eh
+	dw 0829dh
 	dw 0851ch
-	dw 088dah
-	dw 08f17h
+	dw 0879bh
+	dw 08a19h
+	dw 08dd8h
+	dw 09196h
 	dw 09553h
-	dw 09ccfh
-	dw 0a6cah
-	dw 0b203h
-	dw 0bfbch
+	dw 09a51h
+	dw 09f4eh
+	dw 0a58ah
+	dw 0abc7h
+	dw 0b343h
+	dw 0bbfeh
+	dw 0c4b9h
 	dw 0ceb4h
-	dw 0e02ah
-	dw 0f420h
-	dw 0f913h
-	dw 0f906h
+	dw 0d9eeh
+	dw 0e528h
+	dw 0f1a1h
+	dw 0f91ah
+	dw 0f912h
+	dw 0f909h
+	dw 0f900h
+	dw 0f8f7h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07ee0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07ee1h
 	dw 08021h
-	dw 08163h
-	dw 08525h
+	dw 08162h
+	dw 082a3h
+	dw 083e4h
+	dw 08666h
 	dw 088e7h
-	dw 08deah
+	dw 08ca9h
+	dw 08f2ch
 	dw 0942eh
-	dw 09bb3h
-	dw 0a479h
-	dw 0ae80h
-	dw 0bb08h
+	dw 097f1h
+	dw 09cf5h
+	dw 0a338h
+	dw 0a97dh
+	dw 0b101h
+	dw 0b886h
+	dw 0c14ch
 	dw 0ca12h
-	dw 0da5ch
-	dw 0ed29h
-	dw 0f9b6h
-	dw 0f9c6h
+	dw 0d418h
+	dw 0df5fh
+	dw 0eaa7h
+	dw 0f72fh
+	dw 0f9b8h
+	dw 0f9c2h
+	dw 0f9cch
+	dw 0f9d7h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07c62h
-	dw 07c64h
-	dw 079e7h
+	dw 07c63h
+	dw 07b25h
+	dw 07b27h
+	dw 079e9h
 	dw 078abh
-	dw 0762fh
+	dw 0762eh
+	dw 074f1h
 	dw 07275h
-	dw 06ebch
-	dw 06b05h
-	dw 064cfh
-	dw 05e9bh
+	dw 07139h
+	dw 06ebeh
+	dw 06b04h
+	dw 0688ah
+	dw 064d0h
+	dw 06118h
+	dw 05c20h
 	dw 05869h
-	dw 04fb8h
-	dw 0470ah
-	dw 03bdeh
-	dw 030b4h
+	dw 05372h
+	dw 04d3ch
+	dw 04848h
+	dw 04214h
+	dw 03aa0h
+	dw 0332eh
+	dw 02bbdh
+	dw 0243fh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
+	dw 078a0h
 	dw 07760h
-	dw 073a0h
-	dw 06fdfh
-	dw 0685fh
+	dw 074e0h
+	dw 0725fh
+	dw 06e9fh
+	dw 06adfh
+	dw 065deh
 	dw 060deh
-	dw 056ddh
-	dw 04b9ch
-	dw 03ddbh
-	dw 02d99h
+	dw 05a9dh
+	dw 0545dh
+	dw 04cdch
+	dw 0455bh
+	dw 03c9bh
+	dw 0329ah
+	dw 02759h
 	dw 01c18h
-	dw 06d6h
+	dw 0e57h
+	dw 095h
 	dw 094h
+	dw 093h
 	dw 091h
 	dw 08fh
+	dw 08eh
+	dw 08ch
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
 	dw 07d9ch
+	dw 07c5bh
 	dw 07c59h
-	dw 07b15h
-	dw 079d0h
+	dw 07c57h
+	dw 07b14h
+	dw 07b11h
+	dw 079cdh
 	dw 07889h
-	dw 07742h
-	dw 074b9h
-	dw 0722eh
-	dw 06fa1h
+	dw 07885h
+	dw 07740h
+	dw 075fah
+	dw 07373h
+	dw 0722ch
+	dw 070e4h
+	dw 06e5ch
 	dw 06d12h
-	dw 06942h
-	dw 0642fh
-	dw 05f1ah
-	dw 05a02h
+	dw 06a88h
+	dw 067fdh
+	dw 06571h
+	dw 061a5h
+	dw 05f17h
+	dw 05b48h
+	dw 05780h
+	dw 053c0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 0801fh
-	dw 0829eh
-	dw 0865dh
-	dw 08a1bh
-	dw 09059h
+	dw 0815fh
+	dw 083deh
+	dw 0851dh
+	dw 0879ch
+	dw 08b5bh
+	dw 08f19h
+	dw 092d8h
 	dw 097d6h
-	dw 09f52h
-	dw 0aa8eh
-	dw 0b709h
-	dw 0c4c4h
+	dw 09cd4h
+	dw 0a1d2h
+	dw 0a94fh
+	dw 0b0cch
+	dw 0b849h
+	dw 0c105h
+	dw 0cb01h
 	dw 0d4fdh
-	dw 0e8f5h
-	dw 0f92dh
-	dw 0f923h
-	dw 0f918h
+	dw 0e178h
+	dw 0edf3h
+	dw 0f92eh
+	dw 0f928h
+	dw 0f922h
+	dw 0f91bh
+	dw 0f914h
+	dw 0f90ch
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee1h
 	dw 08022h
-	dw 08163h
+	dw 08023h
+	dw 08164h
 	dw 083e5h
-	dw 087a8h
-	dw 08b6ch
+	dw 08527h
+	dw 087a9h
+	dw 08a2bh
+	dw 08deeh
 	dw 091b1h
-	dw 097f6h
-	dw 09f7dh
-	dw 0a985h
-	dw 0b4cfh
+	dw 09574h
+	dw 09938h
+	dw 09e3ch
+	dw 0a481h
+	dw 0aac6h
+	dw 0b10ch
+	dw 0b892h
 	dw 0c159h
-	dw 0cf26h
-	dw 0df74h
-	dw 0f244h
-	dw 0f9d5h
+	dw 0ca21h
+	dw 0d2e9h
+	dw 0de32h
+	dw 0e97bh
+	dw 0f4c6h
+	dw 0f9d1h
+	dw 0f9dch
+	dw 0f9e9h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07c62h
+	dw 07b23h
 	dw 07b24h
-	dw 078a6h
+	dw 079e6h
+	dw 07768h
 	dw 0762ah
-	dw 073aeh
+	dw 074edh
+	dw 07270h
 	dw 06ff4h
-	dw 06afah
-	dw 064c3h
-	dw 05d4ch
-	dw 055d7h
+	dw 06c38h
+	dw 069bch
+	dw 06601h
+	dw 06107h
+	dw 05d4dh
+	dw 05854h
+	dw 0521ch
 	dw 04be4h
-	dw 041f3h
-	dw 03583h
-	dw 027d6h
-	dw 018eah
+	dw 045adh
+	dw 03e36h
+	dw 036c1h
+	dw 02f4ch
+	dw 02698h
+	dw 01ca5h
+	dw 012b3h
+	dw 077fh
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c60h
 	dw 07c60h
 	dw 07b20h
 	dw 0789fh
+	dw 0775fh
 	dw 074dfh
-	dw 06fdeh
-	dw 0699ch
+	dw 0725eh
+	dw 06e9dh
+	dw 06addh
+	dw 0671ch
 	dw 0621bh
-	dw 05819h
-	dw 04cd7h
-	dw 03f14h
-	dw 03011h
+	dw 05bdah
+	dw 05598h
+	dw 04e17h
+	dw 04695h
+	dw 03dd4h
+	dw 033d2h
+	dw 029d0h
 	dw 01e8dh
-	dw 0949h
+	dw 010cbh
+	dw 0448h
 	dw 085h
+	dw 082h
 	dw 07fh
-	dw 07ah
+	dw 07bh
+	dw 077h
+	dw 073h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
+	dw 07d9ch
 	dw 07d9bh
-	dw 07d98h
+	dw 07d99h
+	dw 07d97h
 	dw 07d94h
-	dw 07d8fh
+	dw 07d91h
+	dw 07d8dh
 	dw 07c49h
-	dw 07c41h
-	dw 07c38h
-	dw 07aedh
-	dw 07ae0h
+	dw 07c44h
+	dw 07c3fh
+	dw 07c39h
+	dw 07af3h
+	dw 07aebh
+	dw 07ae3h
+	dw 0799bh
 	dw 07991h
-	dw 07840h
-	dw 076edh
-	dw 07598h
+	dw 07987h
+	dw 0783ch
+	dw 07830h
+	dw 076e3h
+	dw 07595h
+	dw 07586h
 	dw 07440h
+	dw 07300h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08020h
-	dw 0829fh
+	dw 0815fh
+	dw 083dfh
 	dw 0865eh
-	dw 08b5dh
-	dw 0919bh
+	dw 088ddh
+	dw 08b5ch
+	dw 08f1bh
+	dw 0941ah
 	dw 09919h
-	dw 0a1d6h
-	dw 0ad13h
-	dw 0b990h
-	dw 0c88bh
+	dw 09e17h
+	dw 0a456h
+	dw 0abd4h
+	dw 0b352h
+	dw 0bc0fh
+	dw 0c4cdh
+	dw 0cecah
 	dw 0da07h
-	dw 0ef41h
-	dw 0f93bh
-	dw 0f934h
-	dw 0f92ch
+	dw 0e683h
+	dw 0f440h
+	dw 0f93ch
+	dw 0f937h
+	dw 0f933h
+	dw 0f92eh
+	dw 0f929h
+	dw 0f923h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07ee1h
 	dw 07ee2h
-	dw 08024h
+	dw 08023h
+	dw 08164h
 	dw 082a6h
-	dw 08529h
-	dw 088edh
+	dw 083e8h
+	dw 0866ah
+	dw 088ech
+	dw 08b6fh
 	dw 08df3h
-	dw 09439h
-	dw 09a81h
-	dw 0a20ah
-	dw 0ac14h
+	dw 091b6h
+	dw 0957bh
+	dw 09940h
+	dw 09e45h
+	dw 0a34bh
+	dw 0a991h
+	dw 0afd8h
 	dw 0b760h
-	dw 0c2aeh
-	dw 0d1beh
-	dw 0e0cfh
-	dw 0f263h
+	dw 0bee8h
+	dw 0c672h
+	dw 0cf3bh
+	dw 0d946h
+	dw 0e351h
+	dw 0ed5eh
+	dw 0f9ebh
+	dw 0f9f9h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07da1h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c61h
 	dw 07c62h
-	dw 079e3h
+	dw 07b23h
+	dw 079e4h
 	dw 078a6h
+	dw 07627h
 	dw 074e9h
-	dw 0712dh
+	dw 0726ch
+	dw 06fefh
 	dw 06c32h
-	dw 065f8h
-	dw 05e7fh
-	dw 05708h
-	dw 04d12h
+	dw 06876h
+	dw 064bah
+	dw 05fbeh
+	dw 05ac4h
+	dw 055c9h
+	dw 04f90h
+	dw 04816h
 	dw 041deh
-	dw 0342bh
-	dw 0253ah
-	dw 0150bh
-	dw 025eh
+	dw 03926h
+	dw 0306fh
+	dw 027b8h
+	dw 01dc3h
+	dw 0128eh
+	dw 075ah
+	dw 0126h
+	dw 0134h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b1fh
-	dw 0789fh
+	dw 079dfh
+	dw 0775eh
 	dw 074deh
+	dw 0725dh
 	dw 06fdch
-	dw 06adah
+	dw 06c1bh
+	dw 06719h
 	dw 06358h
-	dw 05955h
-	dw 04f52h
-	dw 0418eh
-	dw 033c9h
+	dw 05d16h
+	dw 056d4h
+	dw 05092h
+	dw 04910h
+	dw 0404dh
+	dw 0378ah
+	dw 02d87h
 	dw 02243h
-	dw 0e3dh
-	dw 076h
-	dw 06eh
-	dw 065h
+	dw 015c0h
+	dw 093bh
+	dw 077h
+	dw 072h
+	dw 06dh
+	dw 068h
+	dw 062h
+	dw 05bh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
+	dw 07d9ch
 	dw 07d9bh
-	dw 07d98h
-	dw 07ed5h
-	dw 07ecfh
+	dw 07d99h
+	dw 07d97h
+	dw 07ed4h
+	dw 07ed1h
+	dw 07ecdh
 	dw 08009h
-	dw 08001h
-	dw 08138h
-	dw 0826dh
-	dw 083a0h
+	dw 08004h
+	dw 07fffh
+	dw 08139h
+	dw 08273h
+	dw 0826ch
+	dw 083a4h
+	dw 084dbh
 	dw 08611h
-	dw 08741h
-	dw 089adh
-	dw 08c18h
-	dw 08e80h
+	dw 08607h
+	dw 0873ch
+	dw 08870h
+	dw 08ae3h
+	dw 08c15h
+	dw 08d46h
+	dw 08fc0h
+	dw 09100h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08020h
-	dw 0829fh
+	dw 082a0h
+	dw 083dfh
 	dw 0865fh
-	dw 08b5eh
-	dw 0919dh
+	dw 088dfh
+	dw 08c9eh
+	dw 0905dh
+	dw 0941dh
 	dw 09a5ch
-	dw 0a31ah
-	dw 0ae58h
-	dw 0bc16h
-	dw 0cc54h
+	dw 09f5bh
+	dw 0a59ah
+	dw 0ad19h
+	dw 0b497h
+	dw 0be96h
+	dw 0c754h
+	dw 0d293h
 	dw 0ddd1h
-	dw 0f30dh
+	dw 0ea4fh
+	dw 0f80dh
 	dw 0f94ah
+	dw 0f948h
 	dw 0f945h
-	dw 0f941h
+	dw 0f942h
+	dw 0f93fh
+	dw 0f93bh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07ee2h
-	dw 08024h
-	dw 08167h
-	dw 083eah
-	dw 087afh
+	dw 07ee3h
+	dw 08025h
+	dw 08166h
+	dw 082a8h
+	dw 083ebh
+	dw 0866dh
+	dw 088f1h
 	dw 08a34h
-	dw 08f3bh
-	dw 09443h
-	dw 09bcdh
-	dw 0a358h
+	dw 08df8h
+	dw 0907dh
+	dw 09442h
+	dw 09808h
+	dw 09bceh
+	dw 0a0d5h
+	dw 0a5ddh
 	dw 0ac26h
-	dw 0b635h
-	dw 0c186h
-	dw 0ce19h
-	dw 0dbeeh
+	dw 0b12fh
+	dw 0b8b9h
+	dw 0bf03h
+	dw 0c68fh
+	dw 0cf5bh
+	dw 0d828h
+	dw 0e0f7h
+	dw 0eaffh
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c61h
 	dw 07b22h
-	dw 079e3h
+	dw 07b22h
+	dw 078a4h
 	dw 07765h
-	dw 073a8h
-	dw 06eabh
+	dw 074e6h
+	dw 07268h
+	dw 06febh
+	dw 06d6dh
 	dw 069b0h
-	dw 06235h
-	dw 0597ch
-	dw 050c4h
-	dw 0444dh
+	dw 064b3h
+	dw 060f7h
+	dw 05abbh
+	dw 055c0h
+	dw 04f85h
+	dw 0480ah
+	dw 04090h
 	dw 037d7h
-	dw 028e3h
-	dw 01770h
-	dw 04bfh
+	dw 02ddeh
+	dw 023e6h
+	dw 019eeh
+	dw 0d78h
+	dw 0101h
+	dw 010ch
+	dw 0117h
+	dw 0123h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c60h
+	dw 07c60h
+	dw 07b1fh
+	dw 079deh
+	dw 0775eh
+	dw 0761dh
+	dw 0739ch
+	dw 06fdah
+	dw 06d59h
+	dw 06997h
+	dw 06495h
+	dw 05f93h
+	dw 05950h
+	dw 0530dh
+	dw 04b8ah
+	dw 04407h
+	dw 03b43h
+	dw 0327eh
+	dw 0273ah
+	dw 01bf5h
+	dw 0f6fh
+	dw 02e9h
+	dw 063h
+	dw 05ch
+	dw 055h
+	dw 04dh
+	dw 045h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07d9fh
+	dw 07d9fh
+	dw 07d9eh
+	dw 07d9ch
+	dw 07edbh
+	dw 07ed9h
+	dw 08017h
+	dw 08014h
+	dw 08151h
+	dw 0828eh
+	dw 083cah
+	dw 08505h
+	dw 08640h
+	dw 0877ah
+	dw 089f4h
+	dw 08b2dh
+	dw 08da5h
+	dw 0901ch
+	dw 09293h
+	dw 09509h
+	dw 098beh
+	dw 09b32h
+	dw 09ee6h
+	dw 0a298h
+	dw 0a649h
+	dw 0ab40h
+	dw 0b040h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07ee0h
+	dw 07ee0h
+	dw 08020h
+	dw 082a0h
+	dw 083e0h
+	dw 08660h
+	dw 088e0h
+	dw 08ca0h
+	dw 0905fh
+	dw 0955fh
+	dw 09a5fh
+	dw 0a09fh
+	dw 0a6deh
+	dw 0ae5eh
+	dw 0b5ddh
+	dw 0bfddh
+	dw 0c89ch
+	dw 0d3dch
+	dw 0e05bh
+	dw 0ecdbh
+	dw 0f95ah
+	dw 0f959h
+	dw 0f958h
+	dw 0f957h
+	dw 0f956h
+	dw 0f955h
+	dw 0f954h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da1h
+	dw 07da1h
+	dw 07ee2h
+	dw 07ee3h
+	dw 07ee5h
+	dw 08027h
+	dw 08169h
+	dw 082abh
+	dw 083eeh
+	dw 08532h
+	dw 087b6h
+	dw 088fah
+	dw 08b7fh
+	dw 08e04h
+	dw 0908bh
+	dw 09451h
+	dw 09819h
+	dw 09be1h
+	dw 09faah
+	dw 0a4b4h
+	dw 0a87eh
+	dw 0aec9h
+	dw 0b3d6h
+	dw 0ba23h
+	dw 0c071h
+	dw 0c7ffh
+	dw 0cf7fh
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c61h
+	dw 07b21h
+	dw 079e2h
+	dw 078a3h
+	dw 07624h
+	dw 074e5h
+	dw 07127h
+	dw 06ea9h
+	dw 06aebh
+	dw 0672eh
+	dw 06230h
+	dw 05d34h
+	dw 056f7h
+	dw 050bbh
+	dw 0493fh
+	dw 041c4h
+	dw 03909h
+	dw 02f0fh
+	dw 02515h
+	dw 019dch
+	dw 0d63h
+	dw 0ebh
+	dw 0f3h
+	dw 0fch
+	dw 0106h
 	dw 0110h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07c60h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c5fh
 	dw 07b1fh
-	dw 0789eh
-	dw 074ddh
-	dw 0711bh
-	dw 06c18h
-	dw 06495h
-	dw 05bd1h
-	dw 051cdh
-	dw 04547h
-	dw 03781h
-	dw 0273ah
-	dw 01472h
-	dw 068h
-	dw 05eh
-	dw 052h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07d9fh
-	dw 07d9eh
-	dw 07edch
-	dw 07ed9h
-	dw 08015h
-	dw 08150h
-	dw 083cah
-	dw 08502h
-	dw 08779h
-	dw 08b2eh
-	dw 08ee2h
-	dw 09293h
-	dw 09783h
-	dw 09c70h
-	dw 0a29bh
-	dw 0a8c3h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07ee0h
-	dw 08020h
-	dw 083e0h
-	dw 087a0h
-	dw 08ca0h
-	dw 092dfh
-	dw 09a5fh
-	dw 0a45eh
-	dw 0af9eh
-	dw 0bd5dh
-	dw 0cd9ch
-	dw 0e05bh
-	dw 0f59ah
-	dw 0f959h
-	dw 0f957h
-	dw 0f956h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07da1h
-	dw 07ee2h
-	dw 07ee4h
-	dw 08027h
-	dw 082abh
-	dw 083f0h
-	dw 087b6h
-	dw 08a3dh
-	dw 08f46h
-	dw 09310h
-	dw 0995ch
-	dw 09faah
-	dw 0a73ah
-	dw 0b00ch
-	dw 0b8e0h
-	dw 0c2f7h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07c60h
-	dw 07b21h
-	dw 078a3h
-	dw 07624h
-	dw 07267h
-	dw 06d6ah
-	dw 0672eh
-	dw 05e72h
-	dw 055b8h
-	dw 04a7eh
-	dw 03e06h
-	dw 02f0fh
-	dw 01d99h
-	dw 0ae5h
-	dw 0f2h
-	dw 0100h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07da0h
-	dw 07c60h
-	dw 07b1fh
+	dw 079deh
 	dw 0789dh
 	dw 0761ch
-	dw 07259h
-	dw 06d56h
+	dw 074dbh
+	dw 07119h
+	dw 06e97h
+	dw 06ad5h
 	dw 06712h
-	dw 05e4eh
-	dw 05588h
-	dw 04a42h
-	dw 03dbah
+	dw 06210h
+	dw 05d0ch
+	dw 056c9h
+	dw 05085h
+	dw 04901h
+	dw 0417ch
+	dw 038b7h
 	dw 02eb1h
-	dw 01d27h
-	dw 0a5bh
-	dw 04eh
-	dw 040h
+	dw 024abh
+	dw 01964h
+	dw 0cddh
+	dw 055h
+	dw 04dh
+	dw 044h
+	dw 03ah
+	dw 030h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07edeh
-	dw 07edch
+	dw 07eddh
+	dw 07edbh
 	dw 08019h
+	dw 08157h
 	dw 08295h
-	dw 083d0h
+	dw 083d2h
+	dw 0850eh
 	dw 0878ah
-	dw 08a03h
-	dw 08efah
-	dw 092b0h
-	dw 098e4h
+	dw 088c6h
+	dw 08b41h
+	dw 08dbch
+	dw 09035h
+	dw 093efh
+	dw 097a7h
+	dw 09b5fh
 	dw 09f16h
-	dw 0a686h
-	dw 0af34h
-	dw 0b7e0h
-	dw 0c1c9h
+	dw 0a40ch
+	dw 0a7c2h
+	dw 0adf7h
+	dw 0b2eah
+	dw 0b91dh
+	dw 0bf4fh
+	dw 0c6c0h
+	dw 0ce40h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08020h
+	dw 082a0h
 	dw 083e0h
-	dw 087a0h
+	dw 08660h
+	dw 088e0h
 	dw 08ca0h
-	dw 092e1h
+	dw 09061h
+	dw 09561h
 	dw 09a61h
-	dw 0a462h
-	dw 0afa2h
-	dw 0bd63h
-	dw 0cda4h
+	dw 0a0a1h
+	dw 0a6e2h
+	dw 0ae62h
+	dw 0b5e3h
+	dw 0bfe3h
+	dw 0c8a4h
+	dw 0d3e4h
 	dw 0e065h
-	dw 0f5a6h
+	dw 0ece5h
+	dw 0f966h
 	dw 0f967h
+	dw 0f968h
 	dw 0f969h
 	dw 0f96ah
+	dw 0f96bh
+	dw 0f96ch
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07da2h
-	dw 07ee4h
+	dw 07da4h
+	dw 07ee5h
 	dw 07ee7h
-	dw 0802bh
-	dw 08170h
+	dw 08029h
+	dw 0802ch
+	dw 0816fh
+	dw 082b2h
 	dw 083f6h
-	dw 0853eh
-	dw 087c7h
-	dw 08b92h
-	dw 08f5eh
+	dw 0853bh
+	dw 08680h
+	dw 087c6h
+	dw 08a4ch
+	dw 08b93h
+	dw 08e1bh
+	dw 090a4h
 	dw 0932dh
-	dw 0983dh
-	dw 09d50h
-	dw 0a3a5h
-	dw 0a9fdh
+	dw 095b7h
+	dw 09982h
+	dw 09c0eh
+	dw 09fdah
+	dw 0a3a8h
+	dw 0a777h
+	dw 0ac7fh
+	dw 0b17fh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b21h
-	dw 078a2h
-	dw 074e3h
-	dw 07125h
-	dw 06c28h
+	dw 079e2h
+	dw 07762h
+	dw 07623h
+	dw 073a4h
+	dw 06fe6h
+	dw 06d67h
+	dw 069a9h
 	dw 064abh
-	dw 05befh
-	dw 051f3h
-	dw 04579h
-	dw 037bfh
+	dw 05fadh
+	dw 05970h
+	dw 05333h
+	dw 04bb6h
+	dw 04439h
+	dw 03b7dh
+	dw 032c2h
 	dw 02786h
-	dw 014ceh
-	dw 0d8h
-	dw 0e2h
-	dw 0eeh
+	dw 01c4bh
+	dw 0fd1h
+	dw 0357h
+	dw 0ddh
+	dw 0e4h
+	dw 0ebh
+	dw 0f3h
+	dw 0fbh
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c5fh
 	dw 07b1eh
-	dw 079ddh
+	dw 07b1eh
+	dw 0789ch
 	dw 0775bh
-	dw 07398h
-	dw 06e95h
+	dw 074dah
+	dw 07258h
+	dw 06fd5h
+	dw 06d53h
 	dw 06990h
-	dw 0620bh
-	dw 05944h
-	dw 0507ch
-	dw 043f3h
+	dw 0648dh
+	dw 060c9h
+	dw 05a85h
+	dw 05580h
+	dw 04f3bh
+	dw 047b6h
+	dw 04030h
 	dw 03769h
-	dw 0285dh
-	dw 016d0h
-	dw 0401h
-	dw 030h
+	dw 02d62h
+	dw 0235ah
+	dw 01952h
+	dw 0cc8h
+	dw 03fh
+	dw 034h
+	dw 029h
+	dw 01dh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07edeh
-	dw 0801ch
-	dw 08159h
-	dw 083d6h
-	dw 08791h
+	dw 07eddh
+	dw 0801bh
+	dw 0815ah
+	dw 08298h
+	dw 083d5h
+	dw 08653h
+	dw 088cfh
 	dw 08a0ch
-	dw 08f05h
-	dw 093fdh
-	dw 09b73h
-	dw 0a2e8h
+	dw 08dc8h
+	dw 09043h
+	dw 093feh
+	dw 097b8h
+	dw 09b72h
+	dw 0a06bh
+	dw 0a563h
 	dw 0ab9ah
-	dw 0b58bh
-	dw 0c0bah
-	dw 0cd27h
-	dw 0dad2h
+	dw 0b091h
+	dw 0b807h
+	dw 0be3dh
+	dw 0c5b1h
+	dw 0ce65h
+	dw 0d718h
+	dw 0dfc9h
+	dw 0e9c0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08020h
-	dw 082a1h
+	dw 082a0h
+	dw 083e1h
 	dw 08661h
-	dw 08b62h
-	dw 091a3h
+	dw 088e1h
+	dw 08ca2h
+	dw 09063h
+	dw 09423h
 	dw 09a64h
-	dw 0a326h
-	dw 0ae68h
-	dw 0bc2ah
-	dw 0cc6ch
+	dw 09f65h
+	dw 0a5a6h
+	dw 0ad27h
+	dw 0b4a9h
+	dw 0beaah
+	dw 0c76ch
+	dw 0d2adh
 	dw 0ddefh
-	dw 0f333h
+	dw 0ea71h
+	dw 0f833h
 	dw 0f976h
+	dw 0f978h
 	dw 0f97bh
-	dw 0f97fh
+	dw 0f97eh
+	dw 0f981h
+	dw 0f985h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07da2h
+	dw 07da4h
 	dw 07da5h
-	dw 07da8h
-	dw 07eebh
-	dw 07ef1h
+	dw 07da7h
+	dw 07da9h
+	dw 07eech
+	dw 07eefh
+	dw 07ef3h
 	dw 08037h
-	dw 0803fh
-	dw 08188h
-	dw 082d3h
-	dw 08420h
+	dw 0803ch
+	dw 08041h
+	dw 08187h
+	dw 082cdh
+	dw 082d4h
+	dw 0841ch
+	dw 08565h
 	dw 086afh
-	dw 087ffh
-	dw 08a93h
-	dw 08d28h
-	dw 08fbfh
+	dw 086b9h
+	dw 08804h
+	dw 08950h
+	dw 08bddh
+	dw 08d2bh
+	dw 08e7ah
+	dw 090ffh
+	dw 0923fh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b21h
-	dw 078a1h
+	dw 079e1h
+	dw 07762h
 	dw 074e2h
+	dw 07263h
 	dw 06fe4h
-	dw 06ae6h
+	dw 06c25h
+	dw 06727h
 	dw 06368h
-	dw 0596bh
-	dw 04f6eh
-	dw 041b2h
-	dw 033f7h
+	dw 05d2ah
+	dw 056ech
+	dw 050aeh
+	dw 04930h
+	dw 04073h
+	dw 037b6h
+	dw 02db9h
 	dw 0227dh
-	dw 0e83h
-	dw 0cah
-	dw 0d2h
-	dw 0dbh
+	dw 01600h
+	dw 0985h
+	dw 0c9h
+	dw 0ceh
+	dw 0d3h
+	dw 0d8h
+	dw 0deh
+	dw 0e5h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07d9fh
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c5fh
 	dw 07c5eh
-	dw 079ddh
+	dw 07b1dh
+	dw 079dch
 	dw 0789ah
+	dw 07619h
 	dw 074d7h
-	dw 07113h
+	dw 07254h
+	dw 06fd1h
 	dw 06c0eh
-	dw 065c8h
-	dw 05e41h
-	dw 056b8h
-	dw 04caeh
+	dw 0684ah
+	dw 06486h
+	dw 05f82h
+	dw 05a7ch
+	dw 05577h
+	dw 04f30h
+	dw 047aah
 	dw 04162h
-	dw 03395h
-	dw 02486h
-	dw 01435h
-	dw 0162h
+	dw 0389ah
+	dw 02fd1h
+	dw 02708h
+	dw 01cfdh
+	dw 011b2h
+	dw 0666h
+	dw 01ah
+	dw 0ch
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07edfh
 	dw 07edeh
-	dw 0801ch
+	dw 0801dh
+	dw 0815ch
 	dw 0829ah
-	dw 08517h
-	dw 088d3h
+	dw 083d8h
+	dw 08656h
+	dw 088d4h
+	dw 08b51h
 	dw 08dcdh
-	dw 09407h
-	dw 09a3fh
-	dw 0a1b6h
-	dw 0abach
+	dw 0918ah
+	dw 09545h
+	dw 09900h
+	dw 09dfbh
+	dw 0a2f5h
+	dw 0a92fh
+	dw 0af68h
 	dw 0b6e0h
-	dw 0c212h
-	dw 0d102h
-	dw 0dff1h
-	dw 0f15dh
+	dw 0be58h
+	dw 0c5ceh
+	dw 0ce85h
+	dw 0d87ah
+	dw 0e26fh
+	dw 0ec62h
+	dw 0f8d5h
+	dw 0f8c7h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08020h
-	dw 082a1h
+	dw 08161h
+	dw 083e1h
 	dw 08662h
-	dw 08b63h
-	dw 091a5h
+	dw 088e3h
+	dw 08b64h
+	dw 08f25h
+	dw 09426h
 	dw 09927h
-	dw 0a1eah
-	dw 0ad2dh
-	dw 0b9b0h
-	dw 0c8b5h
+	dw 09e29h
+	dw 0a46ah
+	dw 0abech
+	dw 0b36eh
+	dw 0bc31h
+	dw 0c4f3h
+	dw 0cef6h
 	dw 0da39h
-	dw 0ef7fh
-	dw 0f985h
-	dw 0f98ch
-	dw 0f994h
+	dw 0e6bdh
+	dw 0f480h
+	dw 0f984h
+	dw 0f989h
+	dw 0f98dh
+	dw 0f992h
+	dw 0f997h
+	dw 0f99dh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07da2h
+	dw 07da4h
 	dw 07da5h
-	dw 07da8h
+	dw 07da7h
+	dw 07da9h
 	dw 07dach
-	dw 07db1h
+	dw 07dafh
+	dw 07db3h
 	dw 07c77h
-	dw 07c7fh
-	dw 07c88h
-	dw 07b53h
-	dw 07b60h
+	dw 07c7ch
+	dw 07c81h
+	dw 07c87h
+	dw 07b4dh
+	dw 07b55h
+	dw 07b5dh
+	dw 07a25h
 	dw 07a2fh
-	dw 07900h
-	dw 077d3h
-	dw 076a8h
+	dw 07a39h
+	dw 07904h
+	dw 07910h
+	dw 077ddh
+	dw 076abh
+	dw 076bah
 	dw 0757fh
+	dw 0743fh
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07c60h
 	dw 07c60h
 	dw 07b20h
 	dw 078a1h
+	dw 07761h
 	dw 074e1h
-	dw 06fe2h
-	dw 069a4h
+	dw 07262h
+	dw 06ea3h
+	dw 06ae3h
+	dw 06724h
 	dw 06225h
-	dw 05827h
-	dw 04ce9h
-	dw 03f2ch
-	dw 0302fh
+	dw 05be6h
+	dw 055a8h
+	dw 04e29h
+	dw 046abh
+	dw 03dech
+	dw 033eeh
+	dw 029f0h
 	dw 01eb3h
-	dw 0977h
+	dw 010f5h
+	dw 0478h
 	dw 0bbh
+	dw 0beh
 	dw 0c1h
-	dw 0c6h
+	dw 0c5h
+	dw 0c9h
+	dw 0cdh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07c5eh
+	dw 07b1dh
 	dw 07b1ch
-	dw 0789ah
+	dw 079dah
+	dw 07758h
 	dw 07616h
-	dw 07392h
+	dw 074d3h
+	dw 07250h
 	dw 06fcch
-	dw 06ac6h
-	dw 0647dh
-	dw 05cf4h
-	dw 05569h
+	dw 06c08h
+	dw 06984h
+	dw 065bfh
+	dw 060b9h
+	dw 05cf3h
+	dw 057ech
+	dw 051a4h
 	dw 04b5ch
-	dw 0414dh
-	dw 034bdh
-	dw 026eah
-	dw 017d6h
+	dw 04513h
+	dw 03d8ah
+	dw 035ffh
+	dw 02e74h
+	dw 025a8h
+	dw 01b9bh
+	dw 0118dh
+	dw 0640h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07edfh
 	dw 0801eh
-	dw 0815dh
+	dw 0801dh
+	dw 0815ch
 	dw 083dbh
-	dw 08798h
-	dw 08b54h
+	dw 08519h
+	dw 08797h
+	dw 08a15h
+	dw 08dd2h
 	dw 0918fh
-	dw 097cah
-	dw 09f43h
-	dw 0a93bh
-	dw 0b471h
+	dw 0954ch
+	dw 09908h
+	dw 09e04h
+	dw 0a43fh
+	dw 0aa7ah
+	dw 0b0b4h
+	dw 0b82eh
 	dw 0c0e7h
-	dw 0ce9ah
-	dw 0decch
-	dw 0f17ch
-	dw 0f8ebh
+	dw 0c99fh
+	dw 0d257h
+	dw 0dd8eh
+	dw 0e8c5h
+	dw 0f3fah
+	dw 0f8efh
+	dw 0f8e4h
+	dw 0f8d7h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 08021h
-	dw 082a2h
-	dw 08663h
-	dw 08a25h
-	dw 09067h
+	dw 08161h
+	dw 083e2h
+	dw 08523h
+	dw 087a4h
+	dw 08b65h
+	dw 08f27h
+	dw 092e8h
 	dw 097eah
-	dw 09f6eh
-	dw 0aab2h
-	dw 0b737h
-	dw 0c4fch
+	dw 09cech
+	dw 0a1eeh
+	dw 0a971h
+	dw 0b0f4h
+	dw 0b877h
+	dw 0c13bh
+	dw 0cb3fh
 	dw 0d543h
-	dw 0e94bh
-	dw 0f993h
-	dw 0f99dh
-	dw 0f9a8h
+	dw 0e1c8h
+	dw 0ee4dh
+	dw 0f992h
+	dw 0f998h
+	dw 0f99eh
+	dw 0f9a5h
+	dw 0f9ach
+	dw 0f9b4h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da1h
 	dw 07da1h
 	dw 07da2h
 	dw 07da4h
+	dw 07c65h
 	dw 07c67h
-	dw 07b2bh
-	dw 079f0h
+	dw 07c69h
+	dw 07b2ch
+	dw 07b2fh
+	dw 079f3h
 	dw 078b7h
-	dw 0777eh
-	dw 07507h
-	dw 07292h
-	dw 0701fh
+	dw 078bbh
+	dw 07780h
+	dw 07646h
+	dw 073cdh
+	dw 07294h
+	dw 0715ch
+	dw 06ee4h
 	dw 06daeh
-	dw 069feh
-	dw 06511h
-	dw 06026h
-	dw 05b3eh
+	dw 06b38h
+	dw 068c3h
+	dw 0664fh
+	dw 0629bh
+	dw 06029h
+	dw 05c78h
+	dw 058bfh
+	dw 054ffh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
+	dw 078a0h
 	dw 07760h
-	dw 073a0h
-	dw 06fe1h
-	dw 06861h
+	dw 074e0h
+	dw 07261h
+	dw 06ea1h
+	dw 06ae1h
+	dw 065e2h
 	dw 060e2h
-	dw 056e3h
-	dw 04ba4h
-	dw 03de5h
-	dw 02da7h
+	dw 05aa3h
+	dw 05463h
+	dw 04ce4h
+	dw 04565h
+	dw 03ca5h
+	dw 032a6h
+	dw 02767h
 	dw 01c28h
-	dw 06eah
+	dw 0e69h
+	dw 0abh
 	dw 0ach
+	dw 0adh
 	dw 0afh
 	dw 0b1h
+	dw 0b2h
+	dw 0b4h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07c5eh
-	dw 07c5ch
-	dw 079d9h
+	dw 07c5dh
+	dw 07b1bh
+	dw 07b19h
+	dw 079d7h
 	dw 07895h
-	dw 07611h
+	dw 07612h
+	dw 074cfh
 	dw 0724bh
-	dw 06e84h
-	dw 06abbh
-	dw 06471h
-	dw 05e25h
+	dw 07107h
+	dw 06e82h
+	dw 06abch
+	dw 06836h
+	dw 06470h
+	dw 060a8h
+	dw 05ba0h
 	dw 057d7h
-	dw 04f08h
-	dw 04636h
-	dw 03ae2h
-	dw 02f8ch
+	dw 052ceh
+	dw 04c84h
+	dw 04778h
+	dw 0412ch
+	dw 039a0h
+	dw 03212h
+	dw 02a83h
+	dw 02300h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07ee0h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07edfh
 	dw 0801fh
-	dw 0815dh
-	dw 0851bh
+	dw 0815eh
+	dw 0829dh
+	dw 083dch
+	dw 0865ah
 	dw 088d9h
-	dw 08dd6h
+	dw 08c97h
+	dw 08f14h
 	dw 09412h
-	dw 09b8dh
-	dw 0a447h
-	dw 0ae40h
-	dw 0bab8h
+	dw 097cfh
+	dw 09ccbh
+	dw 0a308h
+	dw 0a943h
+	dw 0b0bfh
+	dw 0b83ah
+	dw 0c0f4h
 	dw 0c9aeh
-	dw 0d9e4h
-	dw 0ec97h
-	dw 0f90ah
-	dw 0f8fah
+	dw 0d3a8h
+	dw 0dee1h
+	dw 0ea19h
+	dw 0f691h
+	dw 0f908h
+	dw 0f8feh
+	dw 0f8f4h
+	dw 0f8e9h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee1h
 	dw 08021h
-	dw 082a2h
+	dw 08162h
+	dw 082a3h
 	dw 08524h
-	dw 088e6h
-	dw 08f29h
+	dw 087a5h
+	dw 08a27h
+	dw 08de8h
+	dw 091aah
 	dw 0956dh
-	dw 09cf1h
-	dw 0a6f6h
-	dw 0b23dh
-	dw 0c004h
+	dw 09a6fh
+	dw 09f72h
+	dw 0a5b6h
+	dw 0abf9h
+	dw 0b37dh
+	dw 0bc42h
+	dw 0c507h
 	dw 0cf0ch
-	dw 0e096h
-	dw 0f4a0h
-	dw 0f9adh
-	dw 0f9bah
+	dw 0da52h
+	dw 0e598h
+	dw 0f21fh
+	dw 0f9a6h
+	dw 0f9aeh
+	dw 0f9b7h
+	dw 0f9c0h
+	dw 0f9c9h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07da2h
-	dw 07c64h
+	dw 07c63h
+	dw 07c65h
 	dw 07b27h
-	dw 079ebh
-	dw 07770h
+	dw 079e9h
+	dw 079ech
+	dw 078aeh
+	dw 07772h
 	dw 074f6h
-	dw 0727dh
-	dw 06ec6h
-	dw 06b11h
-	dw 0661dh
+	dw 073bah
+	dw 0713fh
+	dw 07005h
+	dw 06d8bh
+	dw 069d2h
+	dw 0675ah
+	dw 063a2h
 	dw 05febh
-	dw 059bbh
-	dw 0524dh
-	dw 04ae2h
-	dw 040f9h
+	dw 05c35h
+	dw 05880h
+	dw 0538bh
+	dw 04e97h
+	dw 049a5h
+	dw 04373h
+	dw 03d3fh
+	dw 036ffh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
+	dw 078a0h
 	dw 07760h
-	dw 073a0h
+	dw 074e0h
+	dw 07260h
 	dw 06ea0h
-	dw 06860h
+	dw 06ae0h
+	dw 065e0h
 	dw 060e0h
-	dw 056e0h
-	dw 04ba0h
-	dw 03ddfh
-	dw 02d9fh
+	dw 05aa0h
+	dw 05460h
+	dw 04ce0h
+	dw 0455fh
+	dw 03b5fh
+	dw 0315fh
+	dw 0275fh
 	dw 01adfh
-	dw 059eh
+	dw 0e5fh
+	dw 09eh
+	dw 09eh
 	dw 09eh
 	dw 09dh
 	dw 09dh
+	dw 09dh
+	dw 09ch
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
 	dw 07c5ch
+	dw 07c5bh
 	dw 07b19h
-	dw 079d5h
-	dw 07890h
+	dw 07b17h
+	dw 079d4h
+	dw 07891h
+	dw 0774eh
 	dw 0760ah
-	dw 07382h
-	dw 070f9h
-	dw 06d2fh
-	dw 06962h
+	dw 074c5h
+	dw 07380h
+	dw 070fbh
+	dw 06e74h
+	dw 06d2dh
+	dw 06966h
+	dw 066ddh
 	dw 06454h
-	dw 05e04h
-	dw 057b1h
-	dw 0515ch
-	dw 04885h
+	dw 0608ah
+	dw 05cbfh
+	dw 058f4h
+	dw 053e7h
+	dw 05019h
+	dw 04b0bh
+	dw 04600h
+	dw 03fc0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07edfh
 	dw 0801fh
-	dw 0829eh
+	dw 0815eh
+	dw 0829dh
 	dw 0851ch
+	dw 0879bh
 	dw 08a1ah
-	dw 08f18h
+	dw 08dd8h
+	dw 09196h
 	dw 09554h
-	dw 09e10h
-	dw 0a80bh
-	dw 0b345h
-	dw 0c0ffh
+	dw 09a52h
+	dw 0a08fh
+	dw 0a6cch
+	dw 0ae48h
+	dw 0b5c5h
+	dw 0bd40h
+	dw 0c73ch
 	dw 0d137h
-	dw 0e2aeh
-	dw 0f7e4h
-	dw 0f919h
-	dw 0f90ch
+	dw 0dc71h
+	dw 0e7ach
+	dw 0f565h
+	dw 0f91eh
+	dw 0f917h
+	dw 0f90fh
+	dw 0f907h
+	dw 0f8feh
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee1h
 	dw 08021h
-	dw 08163h
-	dw 08525h
-	dw 087a8h
-	dw 08cabh
+	dw 08162h
+	dw 082a3h
+	dw 083e5h
+	dw 08666h
+	dw 088e8h
+	dw 08b6ah
+	dw 08f2ch
 	dw 092efh
-	dw 09a74h
-	dw 0a33bh
-	dw 0ad42h
-	dw 0b9cbh
+	dw 097f2h
+	dw 09bb6h
+	dw 0a1fah
+	dw 0a83eh
+	dw 0ae83h
+	dw 0b608h
+	dw 0beceh
 	dw 0c794h
-	dw 0d6a0h
-	dw 0e96ch
-	dw 0f9bbh
-	dw 0f9cbh
+	dw 0d05bh
+	dw 0dba3h
+	dw 0e6ebh
+	dw 0f233h
+	dw 0f9bdh
+	dw 0f9c7h
+	dw 0f9d1h
+	dw 0f9ddh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07da1h
 	dw 07c62h
-	dw 07b24h
-	dw 079e7h
-	dw 0776ah
-	dw 074efh
+	dw 07c63h
+	dw 07b25h
+	dw 079e6h
+	dw 078a8h
+	dw 0776bh
+	dw 0762eh
+	dw 073b1h
 	dw 07135h
-	dw 06d7ch
-	dw 06884h
-	dw 0624eh
-	dw 05c1ah
+	dw 06eb9h
+	dw 06c3eh
+	dw 069c3h
+	dw 06609h
+	dw 06250h
+	dw 05d57h
+	dw 0599fh
 	dw 054a7h
-	dw 04ab6h
-	dw 040c8h
-	dw 0359bh
-	dw 027f1h
+	dw 04e71h
+	dw 0483bh
+	dw 04206h
+	dw 03bd1h
+	dw 0345eh
+	dw 02babh
+	dw 022fah
+	dw 01a3fh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
+	dw 078a0h
 	dw 07760h
 	dw 074dfh
-	dw 06fdfh
-	dw 0699eh
+	dw 0725fh
+	dw 06e9fh
+	dw 06adeh
+	dw 065deh
 	dw 060ddh
-	dw 0581ch
-	dw 04b9ah
-	dw 03dd9h
-	dw 02ed7h
+	dw 05bdch
+	dw 0545bh
+	dw 04e1ah
+	dw 04559h
+	dw 03c98h
+	dw 03297h
+	dw 02896h
 	dw 01c14h
-	dw 06d2h
+	dw 0f93h
+	dw 01d1h
 	dw 08fh
+	dw 08dh
 	dw 08bh
-	dw 088h
+	dw 089h
+	dw 086h
+	dw 084h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
+	dw 07d9ch
 	dw 07d9bh
 	dw 07c59h
-	dw 07c55h
-	dw 07b10h
+	dw 07c57h
+	dw 07c54h
+	dw 07b11h
+	dw 07b0dh
 	dw 079c9h
-	dw 07881h
-	dw 07738h
-	dw 075edh
-	dw 07361h
+	dw 079c5h
+	dw 0787fh
+	dw 07739h
+	dw 075f3h
+	dw 074ach
+	dw 07364h
+	dw 0721bh
 	dw 070d2h
-	dw 06e41h
-	dw 06a6eh
-	dw 06699h
-	dw 062c1h
+	dw 06f88h
+	dw 06cfdh
+	dw 06bb1h
+	dw 06924h
+	dw 06696h
+	dw 06407h
+	dw 06180h
+	dw 05f00h
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07ee0h
+	dw 07ee0h
 	dw 0801fh
-	dw 0829eh
-	dw 0865dh
-	dw 08a1ch
-	dw 0905ah
+	dw 0815fh
+	dw 083deh
+	dw 0851dh
+	dw 088dch
+	dw 08b5bh
+	dw 08f1ah
+	dw 092d9h
 	dw 097d7h
-	dw 0a094h
-	dw 0abd0h
-	dw 0b84bh
-	dw 0c606h
+	dw 09cd5h
+	dw 0a313h
+	dw 0a950h
+	dw 0b0ceh
+	dw 0b98bh
+	dw 0c248h
+	dw 0cc44h
 	dw 0d780h
-	dw 0ea39h
-	dw 0f931h
-	dw 0f929h
-	dw 0f91fh
+	dw 0e2bch
+	dw 0f077h
+	dw 0f932h
+	dw 0f92dh
+	dw 0f927h
+	dw 0f921h
+	dw 0f91bh
+	dw 0f914h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
-	dw 07da1h
+	dw 07da0h
+	dw 07da0h
+	dw 07da0h
+	dw 07ee1h
 	dw 07ee2h
-	dw 08163h
-	dw 083e6h
-	dw 08669h
-	dw 08b6dh
+	dw 08023h
+	dw 08164h
+	dw 082a5h
+	dw 08527h
+	dw 087a9h
+	dw 08a2bh
+	dw 08caeh
 	dw 09071h
-	dw 096b7h
-	dw 09e3eh
-	dw 0a707h
-	dw 0b110h
+	dw 09435h
+	dw 097f9h
+	dw 09cfdh
+	dw 0a202h
+	dw 0a848h
+	dw 0ae8eh
+	dw 0b615h
 	dw 0bd9ch
-	dw 0cb69h
-	dw 0dbb7h
-	dw 0ed48h
-	dw 0f9dah
+	dw 0c664h
+	dw 0cf2ch
+	dw 0d935h
+	dw 0e33fh
+	dw 0ee8ah
+	dw 0f9d5h
+	dw 0f9e1h
+	dw 0f9eeh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da1h
+	dw 07c61h
 	dw 07c62h
-	dw 07b24h
+	dw 07b23h
+	dw 079e4h
 	dw 078a6h
+	dw 07768h
 	dw 0762ah
-	dw 0726eh
+	dw 073adh
+	dw 07130h
 	dw 06eb3h
-	dw 0687ah
-	dw 06242h
-	dw 05acbh
-	dw 05216h
+	dw 06af7h
+	dw 0673ch
+	dw 06381h
+	dw 05fc6h
+	dw 05acch
+	dw 05493h
+	dw 04f9ah
 	dw 04822h
-	dw 03cf0h
-	dw 03080h
-	dw 02192h
-	dw 01167h
+	dw 041ebh
+	dw 03a74h
+	dw 031beh
+	dw 02909h
+	dw 01f15h
+	dw 01521h
+	dw 0b2fh
+	dw 013dh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07c60h
+	dw 07c60h
 	dw 07b20h
 	dw 0789fh
+	dw 0775fh
 	dw 074deh
-	dw 06fddh
-	dw 0699ch
+	dw 0725eh
+	dw 06e9dh
+	dw 06adch
+	dw 0671bh
 	dw 0621ah
-	dw 05958h
-	dw 04e15h
-	dw 04052h
-	dw 0314eh
+	dw 05bd9h
+	dw 05597h
+	dw 04f55h
+	dw 04693h
+	dw 03f11h
+	dw 0350fh
+	dw 02b0dh
 	dw 01e8ah
-	dw 0a85h
+	dw 01347h
+	dw 0584h
 	dw 080h
-	dw 07ah
-	dw 073h
+	dw 07dh
+	dw 079h
+	dw 075h
+	dw 070h
+	dw 06bh
+	dw 07da0h
+	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07da0h
 	dw 07d9fh
+	dw 07d9fh
 	dw 07d9eh
+	dw 07d9ch
 	dw 07d9bh
-	dw 07d98h
+	dw 07d99h
+	dw 07d97h
 	dw 07d94h
-	dw 07d8fh
+	dw 07d91h
+	dw 07d8dh
 	dw 07d89h
-	dw 07d81h
-	dw 07d78h
-	dw 07d6dh
-	dw 07d60h
+	dw 07d84h
+	dw 07d7fh
+	dw 07d79h
+	dw 07d73h
+	dw 07d6bh
+	dw 07d63h
+	dw 07d5bh
 	dw 07d51h
-	dw 07d40h
-	dw 07d2dh
-	dw 07d17h
+	dw 07d47h
+	dw 07d3ch
+	dw 07d30h
+	dw 07d23h
+	dw 07d15h
+	dw 07d06h
+	dw 07d00h
 	dw 07d00h

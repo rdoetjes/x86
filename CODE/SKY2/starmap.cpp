@@ -14,7 +14,7 @@ int main(void){
   file << "spiral";
 
   for (int angle=0; angle<360; angle+=(360/64)){
-    for (float i=0; i<=1.0; i+=0.05){
+    for (float i=0; i<=1.0; i+=1.0f/32){
       easyin = i * i * i;
       x = int(radius * easyin *  cos(angle)) + 160;
       y = int(radius * easyin *  sin(angle)) + 100;
@@ -26,7 +26,7 @@ int main(void){
       y = y > 199 ? 199 : y;
 
       unsigned int mem = (320 * y + x);
-      cout << "\t" << "dw 0" << std::hex << mem << "h\r\n";
+      cout << "\t" << "dw 0" << std::hex << mem << "h " << std::dec <<  x << "," << y << "\r\n";
       file << "\t" << "dw 0" << std::hex << mem << "h\r\n";
     }
   }
