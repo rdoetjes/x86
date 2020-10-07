@@ -14,7 +14,7 @@ int main(void){
   file << "spiral";
 
   for (int angle=0; angle<360; angle+=(360/64)){
-    for (float i=0; i<=1.0; i+=1.0f/32){
+    for (float i=0.0f; i<=1.0; i+=1.0f/32){
       easyin = i * i * i;
       x = int(radius * easyin *  cos(angle)) + 160;
       y = int(radius * easyin *  sin(angle)) + 100;

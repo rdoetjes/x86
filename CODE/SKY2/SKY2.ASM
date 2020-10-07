@@ -1,5 +1,8 @@
 .model small
 
+INPUT_STATUS    EQU    3dah
+HRETRACE 	EQU    01h
+VRETRACE 	EQU    08h
 TSPIRALS	EQU    63
 TSTEPS		EQU    31
 
@@ -22,14 +25,15 @@ main proc
 
 	mov ax, seg spiral
 	mov ds, ax
-	call allOn
+	;call allOn
 _loop:
-	;call seedStar
+	call seedStar
 	call drawStars
 	call keyP
 
-	mov cx, 06000h
+	mov cx, 02h
 wait:
+	call RasterWait
 	dec cx
 	jnz wait
 
@@ -138,6 +142,22 @@ Random PROC
 	mov [PRN], ax
 	ret
 Random ENDP
+
+RasterWait PROC
+;wait for a vertical retrace
+        cli
+        mov dx, INPUT_STATUS
+
+_v1:    in al, dx
+        and al, VRETRACE
+        jnz _v1
+
+_v2:    in al, dx
+        and al, VRETRACE
+        jz _v2
+	sti
+	ret
+endp RasterWait
 
 endp main
 end main
