@@ -3,11 +3,12 @@
 INPUT_STATUS    EQU    3dah
 HRETRACE 	EQU    01h
 VRETRACE 	EQU    08h
-TSPIRALS	EQU    63
+TSPIRALS	EQU    256
 TSTEPS		EQU    31
 
 
 .data
+	curpos		db	0
 	prn		dw      0
 	starPos 	db	TSPIRALS+1 dup (?)
 	starsSeeded 	db 	0
@@ -25,10 +26,11 @@ main proc
 
 	mov ax, seg spiral
 	mov ds, ax
-	;call allOn
+	call AllOff
 _loop:
 	call seedStar
 	call drawStars
+	call seedStar
 	call keyP
 
 	mov cx, 02h
@@ -39,22 +41,29 @@ wait:
 
      jmp _loop
 
-allOn Proc
+allOff Proc
 	mov bp, offset starPos
 	mov si, 0
 load:
-	mov ds:[bp+si], byte ptr 1
+	mov ds:[bp+si], byte ptr 0
 	inc si
-	cmp si, 64
+	cmp si, 63
 	jnz load
+
+	mov si, 64000
+cls:
+	mov es:[si], byte ptr 0
+	dec si
+	cmp si, 0
+	jnz cls
+
 	ret
-endp Allon
+endp AllOff
 
 seedStar PROC
 	call Random
 	mov bp, offset starPos
-	and ax, 63 	;only keep the first 64, as we have 64 stars
-
+	and ax, 255 	;only keep the first 64, as we have 64 stars
 	;get the star position in this corresponding spiral arm
 	mov si, ax
 	mov ax, ds:[bp+si]
@@ -70,38 +79,48 @@ seedStar ENDP
 drawStars PROC
 	mov cx, 0
 draw:
-	;dx = starPos[cx]
-	mov ax, 0
+	;ax = starPos[cx]
+	xor ax, ax
 	mov bp, offset starPos
 	mov si, cx
 	mov al, byte ptr ds:[bp+si]
+	mov [curpos], al
 
-	;if starPos[cx]!= 32 starPos[cx]+=1 else starPos[cx]=0
+	;if starPos[cx]!= 31 starPos[cx]+=1 else starPos[cx]=0
+	cmp al, 0
+	jz nextSpiral
+
 	cmp al, 31
 	jne incStarPos
-	mov ds:[bp+si], byte ptr 0
-	jmp moveStar
+	mov ds:[bp+si], byte ptr 1
+	jmp nextSpiral
 
 incStarPos:
 	inc byte ptr ds:[bp+si]		;move the star forward
 
 moveStar:
-	;bx = starSpiral[cx*32+ax]
+	;bx = starSpiral[(cx*32)+(2*ax)]
 	mov bp, offset spiral
 	mov dx, cx
-	shl dx, 5
-	add ax, dx
+	shl dx, 5   ;1 * 32 = 32
+	shl ax, 1   ;1 * 2  = 2
+	add ax, dx  ;34
 	mov di, ax
 
-	mov bx, ds:[bp+di]
-	mov es:[bx], byte ptr 0
-
+	cmp [curpos], 30
+	jge clean
 	mov bx, ds:[bp+di+2]
 	mov es:[bx], byte ptr 15
 
+clean:
+	mov bx, ds:[bp+di]
+	mov es:[bx], byte ptr 0
+
 nextSpiral:
 	inc cx
-	cmp cx, 64
+	inc cx
+	cmp cx, 128
+
 	jne draw
 
 	ret
@@ -130,7 +149,7 @@ SeedRnd PROC
 SeedRnd ENDP
 
 Random PROC
-	call SeedRnd
+	;call SeedRnd
 	mov cx, 09ffh
   __rnd:
 	dec cx
@@ -145,16 +164,16 @@ Random ENDP
 
 RasterWait PROC
 ;wait for a vertical retrace
-        cli
-        mov dx, INPUT_STATUS
+	cli
+	mov dx, INPUT_STATUS
 
 _v1:    in al, dx
-        and al, VRETRACE
-        jnz _v1
+	and al, VRETRACE
+	jnz _v1
 
 _v2:    in al, dx
-        and al, VRETRACE
-        jz _v2
+	and al, VRETRACE
+	jz _v2
 	sti
 	ret
 endp RasterWait
