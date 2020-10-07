@@ -109,6 +109,10 @@ moveStar:
 
 	cmp [curpos], 30
 	jge clean
+
+	cmp [curpos], 4
+	jle clean
+
 	mov bx, ds:[bp+di+2]
 	mov es:[bx], byte ptr 15
 
@@ -119,7 +123,7 @@ clean:
 nextSpiral:
 	inc cx
 	inc cx
-	cmp cx, 128
+	cmp cx, 230
 
 	jne draw
 
