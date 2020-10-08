@@ -26,11 +26,13 @@ main proc
 
 	mov ax, seg spiral
 	mov ds, ax
+
+	call SeedRnd
 	call AllOff
 _loop:
 	call seedStar
 	call drawStars
-	call seedStar
+	;call seedStar
 	call keyP
 
 	mov cx, 02h
@@ -38,6 +40,7 @@ wait:
 	call RasterWait
 	dec cx
 	jnz wait
+	call seedRnd
 
      jmp _loop
 
@@ -66,8 +69,9 @@ seedStar PROC
 	and ax, 255 	;only keep the first 64, as we have 64 stars
 	;get the star position in this corresponding spiral arm
 	mov si, ax
-	mov ax, ds:[bp+si]
-	cmp ax, 0
+
+	mov dx, ds:[bp+si]
+	cmp dx, 0
 	jnz _exitSeedStar
 
 	mov ds:[bp+si], byte ptr 1
@@ -88,10 +92,10 @@ draw:
 
 	;if starPos[cx]!= 31 starPos[cx]+=1 else starPos[cx]=0
 	cmp al, 0
-	jz nextSpiral
+	je nextSpiral
 
 	cmp al, 31
-	jne incStarPos
+	jle incStarPos
 	mov ds:[bp+si], byte ptr 1
 	jmp nextSpiral
 
@@ -122,8 +126,8 @@ clean:
 
 nextSpiral:
 	inc cx
-	inc cx
-	cmp cx, 230
+	;inc cx
+	cmp cx, 240
 
 	jne draw
 
@@ -153,12 +157,6 @@ SeedRnd PROC
 SeedRnd ENDP
 
 Random PROC
-	;call SeedRnd
-	mov cx, 09ffh
-  __rnd:
-	dec cx
-	jnz __rnd
-
 	mov ax, 25173   ;LCG mult
 	mul word ptr [PRN]
 	add ax, 13849
