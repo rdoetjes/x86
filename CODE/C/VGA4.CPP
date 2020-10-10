@@ -45,12 +45,14 @@ void starMap(){
       x = int(radius * easyin *  cos(angle)) + 160;
       y = int(radius * easyin *  sin(angle)) + 100;
 
-      x = x < 0 ? 160 : x;
-      x = x >= 319 ? 160 : x;
+      x = x < 0 ? 319 : x;
+      x = x >= 319 ? 319 : x;
 
-      y = y < 0 ? 100 : y;
-      y = y >= 199 ? 100 : y;
+      y = y < 0 ? 200 : y;
+      y = y >= 199 ? 200 : y;
+
       STARMAP[c] = 320 * y + x;
+
       c++;
     }
   }
@@ -78,7 +80,7 @@ int main(void){
   //mov ah,0, mov al,13h, int 10h
   setVgaMode(0x13);
 
-  srand(time(NULL));
+  srand(time(0));
 
   STARMAP = (int*)malloc( (ARMS*STEPS)*sizeof(int) );
   starMap();
@@ -88,7 +90,10 @@ int main(void){
 
   while( !kbhit() ){
 
-    for(int i=0; i < TSTARS; ++i){
+    for(int i=0; i<2; ++i)
+      waitRetrace();
+
+    for(i=0; i < TSTARS; ++i){
 
       seedStar();
 
@@ -103,10 +108,8 @@ int main(void){
       if (STARS[i] < STEPS){
 	VGA[ STARMAP[offset+1] ] = CMAP[STARS[i]];
       }
+      putPixel(0,0,0);
     }
-
-    for(i=0; i<2; ++i)
-      waitRetrace();
   }
 
   setVgaMode(0x3);
