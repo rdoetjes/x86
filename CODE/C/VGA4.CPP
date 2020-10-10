@@ -8,7 +8,7 @@
 
 const SCREEN_WIDTH = 320;
 const SCREEN_HEIGHT = 200;
-const TSTARS = 80;
+const TSTARS = 75;
 const STEPS = 48;
 const ARMS = 64;
 
