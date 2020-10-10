@@ -110,6 +110,7 @@ int main(void){
   srand(time(0));
 
   STARMAP = (int*)malloc( (ARMS*STEPS)*sizeof(int) );
+  memcpy(STARMAP, 0, (ARMS*STEPS)*sizeof(int) );
   starMap();
 
   STARS = (byte *)malloc(TSTARS);
