@@ -40,7 +40,7 @@ void starMap(){
   int c = 0;
 
   for (int angle=0; angle<360; angle+=(360/ARMS)){
-    for (float i=0.2f; i<=1.0; i+=0.8f/STEPS){
+    for (float i=0.4f; i<=1.0; i+=0.9f/STEPS){
       easyin = i * i * i;
       x = int(radius * easyin *  cos(angle)) + 160;
       y = int(radius * easyin *  sin(angle)) + 100;
@@ -54,6 +54,11 @@ void starMap(){
       c++;
     }
   }
+}
+
+void initStars(){
+  for (int i=0; i <TSTARS; i++)
+     STARS[i] = rand() % STEPS;
 }
 
 void seedStar(){
@@ -76,10 +81,10 @@ int main(void){
   srand(time(NULL));
 
   STARMAP = (int*)malloc( (ARMS*STEPS)*sizeof(int) );
-
   starMap();
 
   STARS = (byte *)malloc(TSTARS);
+  initStars();
 
   while( !kbhit() ){
 
