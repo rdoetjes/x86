@@ -9,12 +9,20 @@
 const SCREEN_WIDTH = 320;
 const SCREEN_HEIGHT = 200;
 const TSTARS = 80;
-const STEPS = 32;
+const STEPS = 48;
 const ARMS = 64;
 
 typedef unsigned char byte;
 byte far *VGA=(byte far*)0xA0000000L;
-byte CMAP[]={16, 16, 16, 16, 16, 16, 16, 18, 18, 18, 18, 18, 18, 19, 19, 19, 19, 20, 20, 20, 20, 25, 26,216, 27, 15, 16, 15, 15, 15, 15, 15};
+byte CMAP[]={16, 16, 16, 16, 16, 16,
+	     16, 18, 18, 18, 18, 18,
+	     18, 19, 19, 19, 19, 19,
+	     21, 21, 21, 21, 21, 21,
+	     27, 27, 27, 27, 27, 27,
+	     15, 15, 15, 15, 15, 15,
+	     15, 15, 15, 15, 15, 15,
+	     15, 15, 15, 15, 15, 15,
+	     };
 
 #define putPixel(x, y, col) *(VGA+(y)*SCREEN_WIDTH+x)=col;
 #define getPixel(x, y) *(VGA+(y)*SCREEN_WIDTH+x);
