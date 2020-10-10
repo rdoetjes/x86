@@ -8,7 +8,7 @@
 
 const SCREEN_WIDTH = 320;
 const SCREEN_HEIGHT = 200;
-const TSTARS = 90;
+const TSTARS = 70;
 const STEPS = 48;
 const ARMS = 64;
 
@@ -57,7 +57,7 @@ void starMap(){
   int c = 0;
 
   for (int angle=0; angle<360; angle+=(360/ARMS)){
-    for (float i=0.4f; i<=1.0; i+=0.9f/STEPS){
+    for (float i=0.4f; i<=1.0; i+=0.8f/STEPS){
       easyin = i * i * i;  //make the stars move slower in the beginning
       x = int(radius * easyin *  cos(angle)) + 160;
       y = int(radius * easyin *  sin(angle)) + 100;
@@ -110,7 +110,7 @@ int main(void){
   srand(time(0));
 
   STARMAP = (int*)malloc( (ARMS*STEPS)*sizeof(int) );
-  memcpy(STARMAP, 0, (ARMS*STEPS)*sizeof(int) );
+  //memcpy(STARMAP, 0, (ARMS*STEPS)*sizeof(int) );
   starMap();
 
   STARS = (byte *)malloc(TSTARS);
