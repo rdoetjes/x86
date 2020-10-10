@@ -8,7 +8,7 @@
 
 const SCREEN_WIDTH = 320;
 const SCREEN_HEIGHT = 200;
-const TSTARS = 75;
+const TSTARS = 90;
 const STEPS = 48;
 const ARMS = 64;
 
@@ -21,7 +21,7 @@ byte CMAP[]={16, 16, 16, 16, 16, 16,
 	     27, 27, 27, 27, 27, 27,
 	     15, 15, 15, 15, 15, 15,
 	     15, 15, 15, 15, 15, 15,
-	     15, 15, 15, 15, 15, 15,
+	     27, 27, 19, 19, 18, 16
 	     };
 
 #define putPixel(x, y, col) *(VGA+(y)*SCREEN_WIDTH+x)=col;
