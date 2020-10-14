@@ -15,7 +15,7 @@ const ARMS = 64;
 typedef unsigned char byte;
 byte far *VGA=(byte far*)0xA0000000L;
 //color map to fade in and out stars
-byte CMAP[]={16, 16, 16, 16, 16, 16,
+const byte CMAP[]={16, 16, 16, 16, 16, 16,
 	     16, 18, 18, 18, 18, 18,
 	     18, 19, 19, 19, 19, 19,
 	     21, 21, 21, 21, 21, 21,
@@ -52,7 +52,7 @@ void setVgaMode(int mode){
 */
 void starMap(){
   int x, y;
-  int radius = 188;
+  const int radius = 188;
   float easyin;
   int c = 0;
 
