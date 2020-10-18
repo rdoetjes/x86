@@ -6,13 +6,14 @@
 #include <string.h>
 #include <time.h>
 
-const SCREEN_WIDTH = 320;
-const SCREEN_HEIGHT = 200;
-const TSTARS = 70;
-const STEPS = 48;
-const ARMS = 64;
-
 typedef unsigned char byte;
+
+const int SCREEN_WIDTH = 320;
+const byte SCREEN_HEIGHT = 200;
+const byte TSTARS = 70;
+const byte STEPS = 48;
+const byte ARMS = 64;
+
 byte far *VGA=(byte far*)0xA0000000L;
 //color map to fade in and out stars
 const byte CMAP[]={16, 16, 16, 16, 16, 16,
