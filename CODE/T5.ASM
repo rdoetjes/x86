@@ -7,6 +7,7 @@ PALETTE_DATA EQU 3c9h
 INPUT_STATUS EQU 3dah
 HRETRACE EQU 01h
 VRETRACE EQU 08h
+BAR_WIDTH EQU 30
 
 .DATA
 	bpos	db 00
@@ -59,9 +60,6 @@ MAIN PROC
 	mov ax,SEG _DATA
 	mov ds, ax
 
-	mov ax, 13h
-	int 10h
-
 _loop:
 	;sine table offset pointer
 	mov di, 00h
@@ -77,7 +75,7 @@ __loop:
 	mov [cop1Pos], cx   ;store the bar begin pos in var cop1Pos
 
 	add si, 20          ;set bar 3 to offset 20 from cop1Pos in sine list
-	and si, 00ffh       ;keep only the lowest 8 bits (bar pos is 0-255)
+	and si, 00ffh       ;keep only lowest 8 bits (bar pos is 0-255)
 	mov cx, word ptr [sine+si] ;store the bar beging pos from sine list
 	mov [cop3Pos], cx   ;stire the bar begin pos in var cop3Pos
 
@@ -106,7 +104,7 @@ _lines:
 	call setBarColor
 
 	inc cx	;increment line count
-	cmp cx, 350
+	cmp cx, 650
 	jnz _lines
 	sti
 
@@ -181,7 +179,7 @@ drawBar PROC
 	mov al,00h              ;no? draw the black background
 	ret
   bar:
-	add bx, 30		;draw a bar 30 lines wide
+	add bx, BAR_WIDTH	;draw a bar BAR_WIDTH lines wide
 	cmp cx, bx
 	jg colOff               ;is scanline beyond the bar, then draw black
 	jz barLastLine          ;last line has a brighter tint but not ffh

@@ -44,7 +44,6 @@ my_handler proc
 	pop ax
 
 	jmp cs:OLD_INT
-	sti
 my_handler endp
 
 closeFile proc
@@ -74,6 +73,7 @@ WriteAL endp
 
 openFile proc
 	push ax
+	push bx
 	push cx
 	push dx
   _open:
@@ -97,7 +97,9 @@ openFile proc
   _opened:
 	pop dx
 	pop cx
+	pop bx
 	pop ax
+
 	ret
 openFile endp
 

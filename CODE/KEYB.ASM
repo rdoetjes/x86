@@ -38,7 +38,7 @@ my_handler endp
 TSR:
 	cli	;we are setting up interrupts so stop interupting please
 
-	push cs	;quick way to point DS to CD
+	push cs	;quick way to point DS to CS
 	pop ds
 
 	;save old keyboard handler pointer
@@ -46,7 +46,7 @@ TSR:
 	mov al, 09h
 	mov ah, 35h
 	int 21h
-	mov WORD PTR [OLD_INT], bx	;save instruction pojnter
+	mov WORD PTR [OLD_INT], bx	;save instruction pointer
 	mov WORD PTR [OLD_INT+2], es	;save the code segment
 
 	;install my keyboard hook

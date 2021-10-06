@@ -27,8 +27,19 @@ const byte CMAP[]={16, 16, 16, 16, 16, 16,
 	     };
 
 //write pixel and get pixel methods
-#define putPixel(x, y, col) *(VGA+(y)*SCREEN_WIDTH+x)=col;
-#define getPixel(x, y) *(VGA+(y)*SCREEN_WIDTH+x);
+//#define putPixel(x, y, col) *(VGA+((y*SCREEN_WIDTH)+x))=col;
+#define getPixel(x, y) *(VGA+((y*SCREEN_WIDTH)+x));
+
+//This is faster because shifting certainly avoids the MUL instruction
+//Which is extremly slow!
+void putPixel(const x, const y, const col){
+
+  int y1 = y << 8;   //multiply by 256
+  int y2 = y << 6;   //multiply by 64
+  y2 = y2 + y1;      //256 + 64 = 320
+
+  *(VGA+(y2 + x))=col;
+}
 
 //vga control constants
 #define INPUT_STATUS 0x3da
@@ -75,6 +86,7 @@ void starMap(){
     }
   }
 }
+
 
 /*
   Enable some starts (1 is on)
