@@ -10,8 +10,6 @@ VRETRACE EQU 08h
 BAR_WIDTH EQU 10
 
 .DATA
-	bpos	db 00
-	cop1Pos dw 00
 	r	db 00
 	g	db 00
 	b	db 00
@@ -26,7 +24,7 @@ MAIN PROC
 	mov bx, 100
 _loop:
 	call vertRetrace
-	mov cx, 0
+	mov cx, 0ffffh  ;set to -1 because w first inc to 0
 _wait4line:
 	call horizRetrace
 	inc cx	;increment line count
