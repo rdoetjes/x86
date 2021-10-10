@@ -1,6 +1,9 @@
 .model small
 
 TSTARS	EQU    200
+INPUT_STATUS EQU 3dah
+HRETRACE EQU 01h
+VRETRACE EQU 08h
 
 .data
 	prn	dw 	00h
@@ -29,6 +32,7 @@ main proc
 	jnz wait_
 	call moveStars
 	call keyP
+	call vertRetrace
 	jmp loop_
 
 main endp
@@ -138,5 +142,23 @@ Random PROC
 	mov [PRN], ax
 	ret
 Random ENDP
+
+vertRetrace PROC
+	;wait for vertical retrace
+	cli
+	mov dx, INPUT_STATUS
+
+_v1:
+	in al, dx
+	and al, VRETRACE
+	jnz _v1
+
+_v2:
+	in al, dx
+	and al, VRETRACE
+	jz _v2
+
+	ret
+vertRetrace ENDP
 
 end main
